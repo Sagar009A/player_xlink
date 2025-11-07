@@ -1,0 +1,26 @@
+[Unit]
+Description=Telegram Link Converter Bot
+After=network.target mysql.service
+Wants=mysql.service
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/html/telegram_bot
+ExecStart=/usr/bin/php /var/www/html/telegram_bot/polling.php
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Resource limits (optional)
+MemoryLimit=256M
+CPUQuota=50%
+
+# Security settings (optional)
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
