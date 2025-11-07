@@ -55,7 +55,7 @@ class BotUserManager {
     public function setApiKey($telegramUserId, $apiKey) {
         try {
             // Verify API key exists in main users table
-            $stmt = $this->pdo->prepare("SELECT id FROM users WHERE api_key = ? AND status = 'active'");
+            $stmt = $this->pdo->prepare("SELECT id FROM users WHERE api_key = ? AND status = 'approved'");
             $stmt->execute([$apiKey]);
             $user = $stmt->fetch();
             
