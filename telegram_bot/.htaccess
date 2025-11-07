@@ -1,0 +1,29 @@
+# Apache Configuration for Telegram Bot
+
+# Protect sensitive files
+<FilesMatch "^(config_bot\.php|test_bot\.php|polling\.php|setup_webhook\.php|.*\.log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow webhook.php to be accessed
+<Files "webhook.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# Disable directory listing
+Options -Indexes
+
+# PHP Settings
+<IfModule mod_php7.c>
+    php_value max_execution_time 300
+    php_value memory_limit 128M
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>

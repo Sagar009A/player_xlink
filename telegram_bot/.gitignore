@@ -1,0 +1,31 @@
+# Logs
+*.log
+logs/
+bot.log
+
+# Cache
+cache/
+*.cache
+
+# Config (sensitive)
+config_bot.php
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+nohup.out
