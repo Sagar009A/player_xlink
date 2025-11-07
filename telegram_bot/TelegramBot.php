@@ -1,7 +1,8 @@
 <?php
 /**
  * Telegram Bot Class
- * Enhanced with user registration, link management, and statistics
+ * Enhanced with user registration, link management, statistics, and post conversion
+ * Version: 2.0 with Post Converter
  */
 
 require_once __DIR__ . '/config_bot.php';
@@ -75,6 +76,42 @@ class TelegramBot {
     }
     
     /**
+     * Send photo with caption
+     */
+    public function sendPhoto($chatId, $photo, $caption = '', $options = []) {
+        $parameters = [
+            'chat_id' => $chatId,
+            'photo' => $photo,
+            'caption' => $caption,
+            'parse_mode' => $options['parse_mode'] ?? 'HTML'
+        ];
+        
+        if (isset($options['reply_markup'])) {
+            $parameters['reply_markup'] = json_encode($options['reply_markup']);
+        }
+        
+        return $this->apiRequest('sendPhoto', $parameters);
+    }
+    
+    /**
+     * Send video with caption
+     */
+    public function sendVideo($chatId, $video, $caption = '', $options = []) {
+        $parameters = [
+            'chat_id' => $chatId,
+            'video' => $video,
+            'caption' => $caption,
+            'parse_mode' => $options['parse_mode'] ?? 'HTML'
+        ];
+        
+        if (isset($options['reply_markup'])) {
+            $parameters['reply_markup'] = json_encode($options['reply_markup']);
+        }
+        
+        return $this->apiRequest('sendVideo', $parameters);
+    }
+    
+    /**
      * Edit message text
      */
     public function editMessageText($chatId, $messageId, $text, $options = []) {
@@ -128,6 +165,10 @@ class TelegramBot {
         
         if ($hasApiKey) {
             $response .= "✅ Your API key is already configured.\n\n";
+            $response .= "📤 <b>How to convert posts:</b>\n";
+            $response .= "1. Send me a photo/video with caption\n";
+            $response .= "2. Include a supported link in caption\n";
+            $response .= "3. Bot will convert and reply!\n\n";
         } else {
             $response .= "🔑 <b>To get started:</b>\n";
             $response .= "1. Visit " . SITE_URL . "\n";
@@ -179,9 +220,9 @@ class TelegramBot {
         if ($result['success']) {
             $response = "✅ <b>API Key Configured Successfully!</b>\n\n";
             $response .= "You can now use all bot features:\n";
+            $response .= "• Send posts with links to convert them\n";
             $response .= "• /mylinks - View your shortened links\n";
-            $response .= "• /stats - View your statistics\n";
-            $response .= "• Send links to shorten them\n\n";
+            $response .= "• /stats - View your statistics\n\n";
             $response .= "🎉 Ready to go!";
             
             $this->userManager->logCommand($from['id'], '/setapi', ['status' => 'success']);
@@ -221,7 +262,7 @@ class TelegramBot {
         if (empty($links)) {
             $response = "📭 <b>No links found</b>\n\n";
             $response .= "You haven't created any shortened links yet.\n";
-            $response .= "Send me a link to get started!";
+            $response .= "Send me a post with a supported link to get started!";
             
             return $this->sendMessage($chatId, $response);
         }
@@ -233,19 +274,11 @@ class TelegramBot {
         foreach ($links as $index => $link) {
             $num = ($page - 1) * LINKS_PER_PAGE + $index + 1;
             $response .= "#{$num}. <b>{$link['short_code']}</b>\n";
+            $response .= "📊 Views: {$link['total_views']} | 💰 Earnings: $" . number_format($link['total_earnings'], 2) . "\n";
             $response .= "🔗 " . SITE_URL . "/{$link['short_code']}\n";
-            
-            if (!empty($link['custom_alias'])) {
-                $response .= "📝 Alias: {$link['custom_alias']}\n";
-            }
-            
-            $response .= "👁 Views: {$link['total_views']}\n";
-            $response .= "💰 Earned: $" . number_format($link['total_earnings'], 4) . "\n";
-            $response .= "📅 " . date('d M Y', strtotime($link['created_at'])) . "\n";
-            $response .= "━━━━━━━━━━━━━━\n";
+            $response .= "📅 " . date('M d, Y', strtotime($link['created_at'])) . "\n\n";
         }
         
-        // Create pagination keyboard
         $keyboard = $this->createPaginationKeyboard($pagination);
         
         $this->userManager->logCommand($from['id'], '/mylinks', ['page' => $page]);
@@ -274,27 +307,23 @@ class TelegramBot {
         
         $response = "📊 <b>Your Statistics</b>\n\n";
         
-        $response .= "👤 <b>Account Info:</b>\n";
-        $response .= "Name: " . ($user['first_name'] ?? 'N/A') . "\n";
-        if (!empty($user['site_username'])) {
-            $response .= "Username: @{$user['site_username']}\n";
-        }
-        $response .= "\n";
-        
         $response .= "📈 <b>Overall Stats:</b>\n";
-        $response .= "🔗 Total Links: " . number_format($stats['total_links']) . "\n";
+        $response .= "🔗 Total Links: " . $stats['total_links'] . "\n";
         $response .= "👁 Total Views: " . number_format($stats['total_views']) . "\n";
-        $response .= "💰 Total Earnings: $" . number_format($stats['total_earnings'], 2) . "\n";
-        $response .= "\n";
+        $response .= "💰 Total Earnings: $" . number_format($stats['total_earnings'], 2) . "\n\n";
         
         $response .= "📅 <b>Today's Stats:</b>\n";
         $response .= "👁 Views: " . number_format($stats['today_views']) . "\n";
-        $response .= "💰 Earnings: $" . number_format($stats['today_earnings'], 2) . "\n";
+        $response .= "💰 Earnings: $" . number_format($stats['today_earnings'], 2) . "\n\n";
+        
+        $response .= "👤 <b>Account:</b>\n";
+        $response .= "📧 " . ($user['email'] ?? 'N/A') . "\n";
+        $response .= "📅 Member since: " . date('M d, Y', strtotime($user['registration_date']));
         
         $keyboard = [
             'inline_keyboard' => [
                 [
-                    ['text' => '🔗 My Links', 'callback_data' => 'mylinks_1'],
+                    ['text' => '🔗 View Links', 'callback_data' => 'mylinks_1'],
                     ['text' => '🔄 Refresh', 'callback_data' => 'stats']
                 ],
                 [
@@ -312,6 +341,12 @@ class TelegramBot {
      * Handle /profile command
      */
     public function handleProfile($chatId, $from) {
+        if (!$this->userManager->hasApiKey($from['id'])) {
+            return $this->sendApiKeyRequiredMessage($chatId);
+        }
+        
+        $this->sendChatAction($chatId, 'typing');
+        
         $user = $this->userManager->getUser($from['id']);
         
         if (!$user) {
@@ -319,30 +354,24 @@ class TelegramBot {
         }
         
         $response = "👤 <b>Your Profile</b>\n\n";
-        $response .= "Telegram ID: <code>{$from['id']}</code>\n";
-        $response .= "First Name: " . ($user['first_name'] ?? 'N/A') . "\n";
         
-        if (!empty($user['telegram_username'])) {
-            $response .= "Username: @{$user['telegram_username']}\n";
+        $response .= "📱 <b>Telegram Info:</b>\n";
+        $response .= "👤 Name: " . ($user['first_name'] ?? 'N/A');
+        if (!empty($user['last_name'])) {
+            $response .= " " . $user['last_name'];
         }
+        $response .= "\n";
+        $response .= "🆔 Username: " . ($user['telegram_username'] ? '@' . $user['telegram_username'] : 'N/A') . "\n";
+        $response .= "🔢 User ID: " . $user['telegram_user_id'] . "\n\n";
         
-        $response .= "\n🔑 <b>API Status:</b> ";
+        $response .= "🌐 <b>Website Account:</b>\n";
+        $response .= "📧 Email: " . ($user['email'] ?? 'N/A') . "\n";
+        $response .= "👤 Username: " . ($user['site_username'] ?? 'N/A') . "\n";
+        $response .= "🔑 API Key: " . (empty($user['api_key']) ? '❌ Not Set' : '✅ Configured') . "\n\n";
         
-        if (!empty($user['api_key'])) {
-            $response .= "✅ Configured\n";
-            $response .= "API Key: <code>" . substr($user['api_key'], 0, 20) . "...</code>\n";
-            
-            if (!empty($user['site_username'])) {
-                $response .= "\n🌐 <b>Linked Account:</b>\n";
-                $response .= "Username: @{$user['site_username']}\n";
-                $response .= "Email: " . ($user['email'] ?? 'N/A') . "\n";
-            }
-        } else {
-            $response .= "❌ Not configured\n";
-            $response .= "\nUse <code>/setapi YOUR_API_KEY</code> to link your account.";
-        }
-        
-        $response .= "\n\n📅 Registered: " . date('d M Y', strtotime($user['registration_date']));
+        $response .= "📅 <b>Activity:</b>\n";
+        $response .= "📝 Registered: " . date('M d, Y', strtotime($user['registration_date'])) . "\n";
+        $response .= "🕐 Last Active: " . date('M d, Y H:i', strtotime($user['last_activity']));
         
         $keyboard = [
             'inline_keyboard' => [
@@ -351,7 +380,7 @@ class TelegramBot {
                     ['text' => '🔗 My Links', 'callback_data' => 'mylinks_1']
                 ],
                 [
-                    ['text' => '🌐 Website', 'url' => SITE_URL]
+                    ['text' => '🌐 Website Profile', 'url' => SITE_URL . '/user/profile.php']
                 ]
             ]
         ];
@@ -376,22 +405,26 @@ class TelegramBot {
         $response .= "/profile - View your profile information\n";
         $response .= "/help - Show this help message\n\n";
         
+        $response .= "🔗 <b>Post Conversion:</b>\n";
+        $response .= "1. Send a post with photo/video\n";
+        $response .= "2. Add caption with supported link\n";
+        $response .= "3. Bot converts and replies with template!\n\n";
+        
+        $response .= "📝 <b>Supported Domains:</b>\n";
+        if (defined('SUPPORTED_DOMAINS') && is_array(SUPPORTED_DOMAINS)) {
+            foreach (array_slice(SUPPORTED_DOMAINS, 0, 5) as $domain) {
+                $response .= "• " . $domain . "\n";
+            }
+        } else {
+            $response .= "• Terabox and other file sharing sites\n";
+        }
+        $response .= "\n";
+        
         $response .= "📝 <b>How to Get Started:</b>\n";
         $response .= "1. Register at " . SITE_URL . "\n";
         $response .= "2. Get your API key from profile\n";
         $response .= "3. Use /setapi to link your account\n";
-        $response .= "4. Start viewing your links and stats!\n\n";
-        
-        $response .= "🔗 <b>Features:</b>\n";
-        $response .= "• View all your shortened links\n";
-        $response .= "• Check statistics for each link\n";
-        $response .= "• Track views and earnings\n";
-        $response .= "• Pagination for easy navigation\n\n";
-        
-        $response .= "💡 <b>Tips:</b>\n";
-        $response .= "• Links are displayed 15 per page\n";
-        $response .= "• Use navigation buttons to browse pages\n";
-        $response .= "• Refresh stats anytime with /stats\n\n";
+        $response .= "4. Start converting posts!\n\n";
         
         $response .= "Need help? Contact: " . BOT_USERNAME;
         
@@ -505,6 +538,174 @@ class TelegramBot {
         return $this->sendMessage($chatId, $response, ['reply_markup' => $keyboard]);
     }
     
+    // ============================================
+    // POST CONVERTER METHODS
+    // ============================================
+    
+    /**
+     * Check if domain is supported
+     */
+    private function isSupportedDomain($url) {
+        if (!defined('SUPPORTED_DOMAINS') || !is_array(SUPPORTED_DOMAINS)) {
+            return false;
+        }
+        
+        $parsedUrl = parse_url($url);
+        if (!isset($parsedUrl['host'])) {
+            return false;
+        }
+        
+        $host = strtolower($parsedUrl['host']);
+        $host = preg_replace('/^www\./', '', $host);
+        
+        foreach (SUPPORTED_DOMAINS as $domain) {
+            if ($host === $domain || strpos($host, '.' . $domain) !== false) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    /**
+     * Extract supported links from text
+     */
+    private function extractSupportedLinks($text) {
+        $links = [];
+        
+        preg_match_all('#https?://[^\s\)]+#i', $text, $matches);
+        
+        if (!empty($matches[0])) {
+            foreach ($matches[0] as $url) {
+                $url = rtrim($url, '.,!?;:');
+                
+                if ($this->isSupportedDomain($url)) {
+                    $links[] = $url;
+                }
+            }
+        }
+        
+        return $links;
+    }
+    
+    /**
+     * Shorten URL via API
+     */
+    private function shortenUrl($url, $apiKey) {
+        try {
+            $apiUrl = $this->siteApiUrl . 'shorten.php';
+            
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $apiUrl);
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
+                'api_key' => $apiKey,
+                'url' => $url
+            ]));
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+            
+            $response = curl_exec($ch);
+            $error = curl_error($ch);
+            curl_close($ch);
+            
+            if ($error) {
+                botLog("Shorten URL error: $error", 'ERROR');
+                return null;
+            }
+            
+            $result = json_decode($response, true);
+            
+            if ($result && isset($result['success']) && $result['success']) {
+                return $result['short_url'] ?? ($result['shortUrl'] ?? null);
+            }
+            
+            return null;
+            
+        } catch (Exception $e) {
+            botLog("Exception in shortenUrl: " . $e->getMessage(), 'ERROR');
+            return null;
+        }
+    }
+    
+    /**
+     * Handle post conversion (MAIN FUNCTION)
+     */
+    public function handlePostConversion($chatId, $from, $message) {
+        if (!$this->userManager->hasApiKey($from['id'])) {
+            return $this->sendApiKeyRequiredMessage($chatId);
+        }
+        
+        $this->sendChatAction($chatId, 'typing');
+        
+        $user = $this->userManager->getUser($from['id']);
+        
+        if (!$user || !$user['api_key']) {
+            return $this->sendApiKeyRequiredMessage($chatId);
+        }
+        
+        $text = $message['caption'] ?? ($message['text'] ?? '');
+        
+        if (empty($text)) {
+            $response = "❌ <b>No text found</b>\n\n";
+            $response .= "Please send a post with text/caption containing supported links.";
+            return $this->sendMessage($chatId, $response);
+        }
+        
+        $supportedLinks = $this->extractSupportedLinks($text);
+        
+        if (empty($supportedLinks)) {
+            $response = "❌ <b>No supported links found</b>\n\n";
+            $response .= "<b>Supported domains:</b>\n";
+            if (defined('SUPPORTED_DOMAINS') && is_array(SUPPORTED_DOMAINS)) {
+                foreach (array_slice(SUPPORTED_DOMAINS, 0, 5) as $domain) {
+                    $response .= "• " . $domain . "\n";
+                }
+            }
+            return $this->sendMessage($chatId, $response);
+        }
+        
+        $originalUrl = $supportedLinks[0];
+        $shortUrl = $this->shortenUrl($originalUrl, $user['api_key']);
+        
+        if (!$shortUrl) {
+            return $this->sendMessage($chatId, "❌ Failed to convert link. Please try again.");
+        }
+        
+        // Build template
+        $templateHeader = defined('TEMPLATE_HEADER') ? TEMPLATE_HEADER : "👇 𝙁𝙐𝙇𝙇 𝙑𝙄𝘿𝙀𝙊 𝙇𝙄𝙉𝙆 👇 Ad Free";
+        $templateFooter = defined('TEMPLATE_FOOTER') ? TEMPLATE_FOOTER : "HOW TO Watch Video👇\nhttps://t.me/yourchannel";
+        
+        $templateText = $templateHeader . "\n\n";
+        $templateText .= $shortUrl . "\n\n";
+        $templateText .= $templateFooter;
+        
+        $this->userManager->logCommand($from['id'], 'convert_post', [
+            'original_url' => $originalUrl,
+            'short_url' => $shortUrl
+        ], 'success');
+        
+        if (isset($message['photo'])) {
+            $photos = $message['photo'];
+            $photo = end($photos);
+            return $this->sendPhoto($chatId, $photo['file_id'], $templateText);
+        }
+        
+        if (isset($message['video'])) {
+            return $this->sendVideo($chatId, $message['video']['file_id'], $templateText);
+        }
+        
+        if (isset($message['document'])) {
+            $mimeType = $message['document']['mime_type'] ?? '';
+            if (strpos($mimeType, 'video/') === 0) {
+                return $this->sendVideo($chatId, $message['document']['file_id'], $templateText);
+            }
+        }
+        
+        return $this->sendMessage($chatId, $templateText);
+    }
+    
     /**
      * Handle incoming update
      */
@@ -527,37 +728,51 @@ class TelegramBot {
             
             botLog("Message from {$from['id']}: $text", 'INFO');
             
-            // Parse command and arguments
-            $parts = explode(' ', $text, 2);
-            $command = $parts[0];
-            $args = $parts[1] ?? '';
-            
-            // Handle commands
-            switch ($command) {
-                case '/start':
-                    return $this->handleStart($chatId, $from);
-                    
-                case '/setapi':
-                    return $this->handleSetApi($chatId, $from, $args);
-                    
-                case '/mylinks':
-                    return $this->handleMyLinks($chatId, $from);
-                    
-                case '/stats':
-                    return $this->handleStats($chatId, $from);
-                    
-                case '/profile':
-                    return $this->handleProfile($chatId, $from);
-                    
-                case '/help':
-                    return $this->handleHelp($chatId);
-                    
-                default:
-                    // Unknown command
-                    $response = "❓ Unknown command: $command\n\n";
-                    $response .= "Use /help to see available commands.";
-                    return $this->sendMessage($chatId, $response);
+            // Check if it's a command (starts with /)
+            if (strpos($text, '/') === 0) {
+                $parts = explode(' ', $text, 2);
+                $command = $parts[0];
+                $args = $parts[1] ?? '';
+                
+                switch ($command) {
+                    case '/start':
+                        return $this->handleStart($chatId, $from);
+                        
+                    case '/setapi':
+                        return $this->handleSetApi($chatId, $from, $args);
+                        
+                    case '/mylinks':
+                        return $this->handleMyLinks($chatId, $from);
+                        
+                    case '/stats':
+                        return $this->handleStats($chatId, $from);
+                        
+                    case '/profile':
+                        return $this->handleProfile($chatId, $from);
+                        
+                    case '/help':
+                        return $this->handleHelp($chatId);
+                        
+                    default:
+                        $response = "❓ Unknown command: $command\n\n";
+                        $response .= "Use /help to see available commands.";
+                        return $this->sendMessage($chatId, $response);
+                }
             }
+            
+            // Not a command - handle post conversion
+            if (!empty($text) || isset($message['caption']) || isset($message['photo']) || isset($message['video'])) {
+                return $this->handlePostConversion($chatId, $from, $message);
+            }
+            
+            // Unknown message type
+            $response = "💡 <b>How to use:</b>\n\n";
+            $response .= "📝 <b>Send me a post with:</b>\n";
+            $response .= "• Photo/Video (optional)\n";
+            $response .= "• Text with supported link\n\n";
+            $response .= "Use /help for more info!";
+            
+            return $this->sendMessage($chatId, $response);
             
         } catch (Exception $e) {
             botLog("Error handling update: " . $e->getMessage(), 'ERROR');
