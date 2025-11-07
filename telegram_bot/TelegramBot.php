@@ -1,20 +1,23 @@
 <?php
 /**
  * Telegram Bot Class
- * Handles all Telegram API interactions
+ * Enhanced with user registration, link management, and statistics
  */
 
 require_once __DIR__ . '/config_bot.php';
+require_once __DIR__ . '/BotUserManager.php';
 
 class TelegramBot {
     private $token;
     private $apiUrl;
     private $siteApiUrl;
+    private $userManager;
     
     public function __construct() {
         $this->token = TELEGRAM_BOT_TOKEN;
         $this->apiUrl = TELEGRAM_API_URL;
         $this->siteApiUrl = SITE_API_URL;
+        $this->userManager = new BotUserManager();
         
         if ($this->token === 'YOUR_BOT_TOKEN_HERE') {
             throw new Exception('Please configure your bot token in config_bot.php');
@@ -72,38 +75,6 @@ class TelegramBot {
     }
     
     /**
-     * Send photo to Telegram
-     */
-    public function sendPhoto($chatId, $photo, $caption = '', $options = []) {
-        $parameters = [
-            'chat_id' => $chatId,
-            'photo' => $photo,
-            'caption' => $caption,
-            'parse_mode' => $options['parse_mode'] ?? 'HTML'
-        ];
-        
-        if (isset($options['reply_markup'])) {
-            $parameters['reply_markup'] = json_encode($options['reply_markup']);
-        }
-        
-        return $this->apiRequest('sendPhoto', $parameters);
-    }
-    
-    /**
-     * Send document to Telegram
-     */
-    public function sendDocument($chatId, $document, $caption = '', $options = []) {
-        $parameters = [
-            'chat_id' => $chatId,
-            'document' => $document,
-            'caption' => $caption,
-            'parse_mode' => $options['parse_mode'] ?? 'HTML'
-        ];
-        
-        return $this->apiRequest('sendDocument', $parameters);
-    }
-    
-    /**
      * Edit message text
      */
     public function editMessageText($chatId, $messageId, $text, $options = []) {
@@ -115,7 +86,22 @@ class TelegramBot {
             'disable_web_page_preview' => $options['disable_preview'] ?? false
         ];
         
+        if (isset($options['reply_markup'])) {
+            $parameters['reply_markup'] = json_encode($options['reply_markup']);
+        }
+        
         return $this->apiRequest('editMessageText', $parameters);
+    }
+    
+    /**
+     * Answer callback query
+     */
+    public function answerCallbackQuery($callbackQueryId, $text = '', $showAlert = false) {
+        return $this->apiRequest('answerCallbackQuery', [
+            'callback_query_id' => $callbackQueryId,
+            'text' => $text,
+            'show_alert' => $showAlert
+        ]);
     }
     
     /**
@@ -129,233 +115,394 @@ class TelegramBot {
     }
     
     /**
-     * Extract links from text
-     */
-    public function extractLinks($text) {
-        $pattern = '/(https?:\/\/[^\s]+)/i';
-        preg_match_all($pattern, $text, $matches);
-        return $matches[0] ?? [];
-    }
-    
-    /**
-     * Convert link using site API
-     */
-    public function convertLink($url) {
-        $apiUrl = $this->siteApiUrl . '?url=' . urlencode($url);
-        
-        botLog("Converting link: $url", 'INFO');
-        
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $apiUrl);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 60);
-        
-        $response = curl_exec($ch);
-        $httpCode = curl_get_info($ch, CURLINFO_HTTP_CODE);
-        $error = curl_error($ch);
-        curl_close($ch);
-        
-        if ($error) {
-            botLog("API Error: $error", 'ERROR');
-            return [
-                'success' => false,
-                'error' => 'Network error while converting link'
-            ];
-        }
-        
-        if ($httpCode !== 200) {
-            botLog("API HTTP Error: $httpCode", 'ERROR');
-            return [
-                'success' => false,
-                'error' => 'API returned error code: ' . $httpCode
-            ];
-        }
-        
-        $result = json_decode($response, true);
-        
-        if (!$result) {
-            botLog("API Response Parse Error", 'ERROR');
-            return [
-                'success' => false,
-                'error' => 'Invalid API response'
-            ];
-        }
-        
-        botLog("Conversion result: " . json_encode($result), 'INFO');
-        
-        return $result;
-    }
-    
-    /**
-     * Process message with links
-     */
-    public function processMessage($message) {
-        $chatId = $message['chat']['id'];
-        $text = $message['text'] ?? $message['caption'] ?? '';
-        $photo = $message['photo'] ?? null;
-        
-        // Extract links from message
-        $links = $this->extractLinks($text);
-        
-        if (empty($links)) {
-            return $this->sendMessage($chatId, 
-                "❌ No links found in your message.\n\n" .
-                "Please send a message with a video link (Terabox, StreamTape, etc.)"
-            );
-        }
-        
-        // Send typing indicator
-        $this->sendChatAction($chatId, 'typing');
-        
-        // Process each link
-        $convertedLinks = [];
-        $errors = [];
-        
-        foreach ($links as $link) {
-            $result = $this->convertLink($link);
-            
-            if ($result['success']) {
-                $convertedLinks[] = [
-                    'original' => $link,
-                    'converted' => $result['download_url'] ?? $result['video_url'] ?? null,
-                    'title' => $result['title'] ?? null,
-                    'thumbnail' => $result['thumbnail'] ?? null,
-                    'platform' => $result['platform'] ?? 'Unknown'
-                ];
-            } else {
-                $errors[] = [
-                    'link' => $link,
-                    'error' => $result['error'] ?? 'Unknown error'
-                ];
-            }
-        }
-        
-        // Build response
-        $response = $this->buildResponse($text, $convertedLinks, $errors);
-        
-        // Send response
-        if ($photo) {
-            // If original message had photo, send photo with converted links
-            $photoFileId = end($photo)['file_id'];
-            return $this->sendPhoto($chatId, $photoFileId, $response);
-        } else {
-            return $this->sendMessage($chatId, $response, [
-                'disable_preview' => false
-            ]);
-        }
-    }
-    
-    /**
-     * Build response message
-     */
-    private function buildResponse($originalText, $convertedLinks, $errors) {
-        $response = "✅ <b>Link Conversion Complete!</b>\n\n";
-        
-        // Add converted links
-        if (!empty($convertedLinks)) {
-            foreach ($convertedLinks as $item) {
-                $response .= "🎬 <b>Platform:</b> " . htmlspecialchars($item['platform']) . "\n";
-                
-                if ($item['title']) {
-                    $response .= "📝 <b>Title:</b> " . htmlspecialchars($item['title']) . "\n";
-                }
-                
-                $response .= "🔗 <b>Original:</b> " . htmlspecialchars($item['original']) . "\n";
-                
-                if ($item['converted']) {
-                    $response .= "⬇️ <b>Download:</b> " . htmlspecialchars($item['converted']) . "\n";
-                } else {
-                    $response .= "⚠️ <i>Download link not available</i>\n";
-                }
-                
-                $response .= "\n";
-            }
-        }
-        
-        // Add errors
-        if (!empty($errors)) {
-            $response .= "❌ <b>Failed Links:</b>\n\n";
-            foreach ($errors as $error) {
-                $response .= "🔗 " . htmlspecialchars($error['link']) . "\n";
-                $response .= "⚠️ " . htmlspecialchars($error['error']) . "\n\n";
-            }
-        }
-        
-        // Remove original links and add converted text
-        $cleanText = $originalText;
-        foreach ($convertedLinks as $item) {
-            if ($item['converted']) {
-                $cleanText = str_replace($item['original'], $item['converted'], $cleanText);
-            }
-        }
-        
-        if ($cleanText !== $originalText && !empty(trim(strip_tags($cleanText)))) {
-            $response .= "━━━━━━━━━━━━━━━━━━\n";
-            $response .= "📄 <b>Updated Message:</b>\n\n";
-            $response .= htmlspecialchars($cleanText);
-        }
-        
-        return $response;
-    }
-    
-    /**
      * Handle /start command
      */
-    public function handleStart($chatId) {
-        $response = "👋 <b>Welcome to Link Converter Bot!</b>\n\n";
-        $response .= "🎯 <b>How to use:</b>\n";
-        $response .= "1️⃣ Send me a message with video links\n";
-        $response .= "2️⃣ You can include text and images too\n";
-        $response .= "3️⃣ I'll convert all links and send them back\n\n";
-        $response .= "📺 <b>Supported Platforms:</b>\n";
-        $response .= "• Terabox\n";
-        $response .= "• StreamTape\n";
-        $response .= "• FileMoon\n";
-        $response .= "• GoFile\n";
-        $response .= "• Diskwala\n";
-        $response .= "• And more...\n\n";
-        $response .= "💡 <b>Example:</b>\n";
-        $response .= "Send: <code>Check out this video https://terabox.com/s/example</code>\n";
-        $response .= "Get: Converted download link with full message\n\n";
-        $response .= "🚀 Start sending links now!";
+    public function handleStart($chatId, $from) {
+        // Register user
+        $this->userManager->registerUser($from['id'], $from);
+        
+        $user = $this->userManager->getUser($from['id']);
+        $hasApiKey = !empty($user['api_key']);
+        
+        $response = "👋 <b>Welcome to " . BOT_NAME . "!</b>\n\n";
+        
+        if ($hasApiKey) {
+            $response .= "✅ Your API key is already configured.\n\n";
+        } else {
+            $response .= "🔑 <b>To get started:</b>\n";
+            $response .= "1. Visit " . SITE_URL . "\n";
+            $response .= "2. Register or login to your account\n";
+            $response .= "3. Go to Profile and copy your API key\n";
+            $response .= "4. Send me: <code>/setapi YOUR_API_KEY</code>\n\n";
+        }
+        
+        $response .= "📱 <b>Bot Commands:</b>\n";
+        $response .= "/setapi - Set your API key\n";
+        $response .= "/mylinks - View your shortened links\n";
+        $response .= "/stats - View your statistics\n";
+        $response .= "/help - Get help\n";
+        $response .= "/profile - View your profile\n\n";
+        $response .= "🚀 Let's get started!";
+        
+        $keyboard = [
+            'inline_keyboard' => [
+                [
+                    ['text' => '🌐 Visit Website', 'url' => SITE_URL],
+                    ['text' => '📖 Help', 'callback_data' => 'help']
+                ]
+            ]
+        ];
+        
+        $this->userManager->logCommand($from['id'], '/start');
+        
+        return $this->sendMessage($chatId, $response, ['reply_markup' => $keyboard]);
+    }
+    
+    /**
+     * Handle /setapi command
+     */
+    public function handleSetApi($chatId, $from, $args) {
+        if (empty($args)) {
+            $response = "❌ <b>Usage:</b> <code>/setapi YOUR_API_KEY</code>\n\n";
+            $response .= "Get your API key from:\n";
+            $response .= SITE_URL . "/user/profile.php";
+            
+            return $this->sendMessage($chatId, $response);
+        }
+        
+        $apiKey = trim($args);
+        
+        $this->sendChatAction($chatId, 'typing');
+        
+        $result = $this->userManager->setApiKey($from['id'], $apiKey);
+        
+        if ($result['success']) {
+            $response = "✅ <b>API Key Configured Successfully!</b>\n\n";
+            $response .= "You can now use all bot features:\n";
+            $response .= "• /mylinks - View your shortened links\n";
+            $response .= "• /stats - View your statistics\n";
+            $response .= "• Send links to shorten them\n\n";
+            $response .= "🎉 Ready to go!";
+            
+            $this->userManager->logCommand($from['id'], '/setapi', ['status' => 'success']);
+        } else {
+            $response = "❌ <b>Error:</b> " . $result['error'] . "\n\n";
+            $response .= "Please check:\n";
+            $response .= "• API key is correct\n";
+            $response .= "• Your account is active\n";
+            $response .= "• You copied the full API key\n\n";
+            $response .= "Get your API key from:\n" . SITE_URL . "/user/profile.php";
+            
+            $this->userManager->logCommand($from['id'], '/setapi', ['status' => 'failed', 'error' => $result['error']]);
+        }
         
         return $this->sendMessage($chatId, $response);
+    }
+    
+    /**
+     * Handle /mylinks command
+     */
+    public function handleMyLinks($chatId, $from, $page = 1) {
+        if (!$this->userManager->hasApiKey($from['id'])) {
+            return $this->sendApiKeyRequiredMessage($chatId);
+        }
+        
+        $this->sendChatAction($chatId, 'typing');
+        
+        $result = $this->userManager->getUserLinks($from['id'], $page, LINKS_PER_PAGE);
+        
+        if (!$result['success']) {
+            return $this->sendMessage($chatId, "❌ Error: " . $result['error']);
+        }
+        
+        $links = $result['links'];
+        $pagination = $result['pagination'];
+        
+        if (empty($links)) {
+            $response = "📭 <b>No links found</b>\n\n";
+            $response .= "You haven't created any shortened links yet.\n";
+            $response .= "Send me a link to get started!";
+            
+            return $this->sendMessage($chatId, $response);
+        }
+        
+        $response = "🔗 <b>Your Shortened Links</b>\n";
+        $response .= "Page {$pagination['current_page']} of {$pagination['total_pages']}\n";
+        $response .= "Total: {$pagination['total']} links\n\n";
+        
+        foreach ($links as $index => $link) {
+            $num = ($page - 1) * LINKS_PER_PAGE + $index + 1;
+            $response .= "#{$num}. <b>{$link['short_code']}</b>\n";
+            $response .= "🔗 " . SITE_URL . "/{$link['short_code']}\n";
+            
+            if (!empty($link['custom_alias'])) {
+                $response .= "📝 Alias: {$link['custom_alias']}\n";
+            }
+            
+            $response .= "👁 Views: {$link['total_views']}\n";
+            $response .= "💰 Earned: $" . number_format($link['total_earnings'], 4) . "\n";
+            $response .= "📅 " . date('d M Y', strtotime($link['created_at'])) . "\n";
+            $response .= "━━━━━━━━━━━━━━\n";
+        }
+        
+        // Create pagination keyboard
+        $keyboard = $this->createPaginationKeyboard($pagination);
+        
+        $this->userManager->logCommand($from['id'], '/mylinks', ['page' => $page]);
+        
+        return $this->sendMessage($chatId, $response, ['reply_markup' => $keyboard]);
+    }
+    
+    /**
+     * Handle /stats command
+     */
+    public function handleStats($chatId, $from) {
+        if (!$this->userManager->hasApiKey($from['id'])) {
+            return $this->sendApiKeyRequiredMessage($chatId);
+        }
+        
+        $this->sendChatAction($chatId, 'typing');
+        
+        $result = $this->userManager->getUserStats($from['id']);
+        
+        if (!$result['success']) {
+            return $this->sendMessage($chatId, "❌ Error: " . $result['error']);
+        }
+        
+        $stats = $result['stats'];
+        $user = $result['user'];
+        
+        $response = "📊 <b>Your Statistics</b>\n\n";
+        
+        $response .= "👤 <b>Account Info:</b>\n";
+        $response .= "Name: " . ($user['first_name'] ?? 'N/A') . "\n";
+        if (!empty($user['site_username'])) {
+            $response .= "Username: @{$user['site_username']}\n";
+        }
+        $response .= "\n";
+        
+        $response .= "📈 <b>Overall Stats:</b>\n";
+        $response .= "🔗 Total Links: " . number_format($stats['total_links']) . "\n";
+        $response .= "👁 Total Views: " . number_format($stats['total_views']) . "\n";
+        $response .= "💰 Total Earnings: $" . number_format($stats['total_earnings'], 2) . "\n";
+        $response .= "\n";
+        
+        $response .= "📅 <b>Today's Stats:</b>\n";
+        $response .= "👁 Views: " . number_format($stats['today_views']) . "\n";
+        $response .= "💰 Earnings: $" . number_format($stats['today_earnings'], 2) . "\n";
+        
+        $keyboard = [
+            'inline_keyboard' => [
+                [
+                    ['text' => '🔗 My Links', 'callback_data' => 'mylinks_1'],
+                    ['text' => '🔄 Refresh', 'callback_data' => 'stats']
+                ],
+                [
+                    ['text' => '🌐 Dashboard', 'url' => SITE_URL . '/user/dashboard.php']
+                ]
+            ]
+        ];
+        
+        $this->userManager->logCommand($from['id'], '/stats');
+        
+        return $this->sendMessage($chatId, $response, ['reply_markup' => $keyboard]);
+    }
+    
+    /**
+     * Handle /profile command
+     */
+    public function handleProfile($chatId, $from) {
+        $user = $this->userManager->getUser($from['id']);
+        
+        if (!$user) {
+            return $this->sendMessage($chatId, "❌ User not found. Please use /start first.");
+        }
+        
+        $response = "👤 <b>Your Profile</b>\n\n";
+        $response .= "Telegram ID: <code>{$from['id']}</code>\n";
+        $response .= "First Name: " . ($user['first_name'] ?? 'N/A') . "\n";
+        
+        if (!empty($user['telegram_username'])) {
+            $response .= "Username: @{$user['telegram_username']}\n";
+        }
+        
+        $response .= "\n🔑 <b>API Status:</b> ";
+        
+        if (!empty($user['api_key'])) {
+            $response .= "✅ Configured\n";
+            $response .= "API Key: <code>" . substr($user['api_key'], 0, 20) . "...</code>\n";
+            
+            if (!empty($user['site_username'])) {
+                $response .= "\n🌐 <b>Linked Account:</b>\n";
+                $response .= "Username: @{$user['site_username']}\n";
+                $response .= "Email: " . ($user['email'] ?? 'N/A') . "\n";
+            }
+        } else {
+            $response .= "❌ Not configured\n";
+            $response .= "\nUse <code>/setapi YOUR_API_KEY</code> to link your account.";
+        }
+        
+        $response .= "\n\n📅 Registered: " . date('d M Y', strtotime($user['registration_date']));
+        
+        $keyboard = [
+            'inline_keyboard' => [
+                [
+                    ['text' => '📊 Statistics', 'callback_data' => 'stats'],
+                    ['text' => '🔗 My Links', 'callback_data' => 'mylinks_1']
+                ],
+                [
+                    ['text' => '🌐 Website', 'url' => SITE_URL]
+                ]
+            ]
+        ];
+        
+        $this->userManager->logCommand($from['id'], '/profile');
+        
+        return $this->sendMessage($chatId, $response, ['reply_markup' => $keyboard]);
     }
     
     /**
      * Handle /help command
      */
     public function handleHelp($chatId) {
-        $response = "📖 <b>Help - Link Converter Bot</b>\n\n";
-        $response .= "🎯 <b>Commands:</b>\n";
-        $response .= "/start - Start the bot\n";
-        $response .= "/help - Show this help message\n";
-        $response .= "/status - Check bot status\n\n";
-        $response .= "🔄 <b>How it works:</b>\n";
-        $response .= "Simply send any message containing video links from supported platforms. ";
-        $response .= "The bot will extract the links, convert them to direct download links, ";
-        $response .= "and send back the complete message with converted links.\n\n";
-        $response .= "📸 <b>Images:</b>\n";
-        $response .= "You can send messages with images and captions. The bot will preserve the image ";
-        $response .= "and convert any links in the caption.\n\n";
-        $response .= "⚡ <b>Need help?</b>\n";
-        $response .= "Contact: @YourSupportUsername";
+        $response = "📖 <b>Help - " . BOT_NAME . "</b>\n\n";
         
-        return $this->sendMessage($chatId, $response);
+        $response .= "🎯 <b>Available Commands:</b>\n\n";
+        
+        $response .= "/start - Start the bot and register\n";
+        $response .= "/setapi - Configure your API key\n";
+        $response .= "/mylinks - View your shortened links (15 per page)\n";
+        $response .= "/stats - View your overall statistics\n";
+        $response .= "/profile - View your profile information\n";
+        $response .= "/help - Show this help message\n\n";
+        
+        $response .= "📝 <b>How to Get Started:</b>\n";
+        $response .= "1. Register at " . SITE_URL . "\n";
+        $response .= "2. Get your API key from profile\n";
+        $response .= "3. Use /setapi to link your account\n";
+        $response .= "4. Start viewing your links and stats!\n\n";
+        
+        $response .= "🔗 <b>Features:</b>\n";
+        $response .= "• View all your shortened links\n";
+        $response .= "• Check statistics for each link\n";
+        $response .= "• Track views and earnings\n";
+        $response .= "• Pagination for easy navigation\n\n";
+        
+        $response .= "💡 <b>Tips:</b>\n";
+        $response .= "• Links are displayed 15 per page\n";
+        $response .= "• Use navigation buttons to browse pages\n";
+        $response .= "• Refresh stats anytime with /stats\n\n";
+        
+        $response .= "Need help? Contact: " . BOT_USERNAME;
+        
+        $keyboard = [
+            'inline_keyboard' => [
+                [
+                    ['text' => '🌐 Visit Website', 'url' => SITE_URL],
+                    ['text' => '👤 Profile', 'callback_data' => 'profile']
+                ]
+            ]
+        ];
+        
+        return $this->sendMessage($chatId, $response, ['reply_markup' => $keyboard]);
     }
     
     /**
-     * Handle /status command
+     * Handle callback queries (button clicks)
      */
-    public function handleStatus($chatId) {
-        $response = "✅ <b>Bot Status:</b> Online\n";
-        $response .= "🔧 <b>API Status:</b> Connected\n";
-        $response .= "⏱ <b>Response Time:</b> Fast\n";
-        $response .= "📊 <b>Server:</b> Operational\n\n";
-        $response .= "All systems running smoothly! 🚀";
+    public function handleCallbackQuery($callbackQuery) {
+        $chatId = $callbackQuery['message']['chat']['id'];
+        $messageId = $callbackQuery['message']['message_id'];
+        $from = $callbackQuery['from'];
+        $data = $callbackQuery['data'];
         
-        return $this->sendMessage($chatId, $response);
+        // Answer callback query immediately
+        $this->answerCallbackQuery($callbackQuery['id']);
+        
+        botLog("Callback query from {$from['id']}: $data", 'INFO');
+        
+        // Parse callback data
+        if ($data === 'help') {
+            return $this->handleHelp($chatId);
+        }
+        
+        if ($data === 'profile') {
+            return $this->handleProfile($chatId, $from);
+        }
+        
+        if ($data === 'stats') {
+            return $this->handleStats($chatId, $from);
+        }
+        
+        if (strpos($data, 'mylinks_') === 0) {
+            $page = intval(str_replace('mylinks_', '', $data));
+            return $this->handleMyLinks($chatId, $from, $page);
+        }
+        
+        // Unknown callback
+        return $this->answerCallbackQuery($callbackQuery['id'], 'Unknown action', true);
+    }
+    
+    /**
+     * Create pagination keyboard
+     */
+    private function createPaginationKeyboard($pagination) {
+        $buttons = [];
+        
+        // Navigation buttons
+        $navRow = [];
+        
+        if ($pagination['current_page'] > 1) {
+            $navRow[] = [
+                'text' => '⬅️ Previous',
+                'callback_data' => 'mylinks_' . ($pagination['current_page'] - 1)
+            ];
+        }
+        
+        if ($pagination['current_page'] < $pagination['total_pages']) {
+            $navRow[] = [
+                'text' => 'Next ➡️',
+                'callback_data' => 'mylinks_' . ($pagination['current_page'] + 1)
+            ];
+        }
+        
+        if (!empty($navRow)) {
+            $buttons[] = $navRow;
+        }
+        
+        // Additional buttons
+        $buttons[] = [
+            ['text' => '📊 Statistics', 'callback_data' => 'stats'],
+            ['text' => '🔄 Refresh', 'callback_data' => 'mylinks_' . $pagination['current_page']]
+        ];
+        
+        $buttons[] = [
+            ['text' => '🌐 Dashboard', 'url' => SITE_URL . '/user/dashboard.php']
+        ];
+        
+        return ['inline_keyboard' => $buttons];
+    }
+    
+    /**
+     * Send API key required message
+     */
+    private function sendApiKeyRequiredMessage($chatId) {
+        $response = "🔑 <b>API Key Required</b>\n\n";
+        $response .= "Please configure your API key first:\n";
+        $response .= "1. Visit " . SITE_URL . "\n";
+        $response .= "2. Login to your account\n";
+        $response .= "3. Go to Profile and copy your API key\n";
+        $response .= "4. Send: <code>/setapi YOUR_API_KEY</code>";
+        
+        $keyboard = [
+            'inline_keyboard' => [
+                [
+                    ['text' => '🌐 Get API Key', 'url' => SITE_URL . '/user/profile.php']
+                ]
+            ]
+        ];
+        
+        return $this->sendMessage($chatId, $response, ['reply_markup' => $keyboard]);
     }
     
     /**
@@ -363,38 +510,60 @@ class TelegramBot {
      */
     public function handleUpdate($update) {
         try {
+            // Handle callback queries
+            if (isset($update['callback_query'])) {
+                return $this->handleCallbackQuery($update['callback_query']);
+            }
+            
+            // Handle messages
             if (!isset($update['message'])) {
                 return;
             }
             
             $message = $update['message'];
             $chatId = $message['chat']['id'];
-            $userId = $message['from']['id'];
-            $text = $message['text'] ?? $message['caption'] ?? '';
+            $from = $message['from'];
+            $text = $message['text'] ?? '';
             
-            botLog("Received message from user $userId: $text", 'INFO');
+            botLog("Message from {$from['id']}: $text", 'INFO');
+            
+            // Parse command and arguments
+            $parts = explode(' ', $text, 2);
+            $command = $parts[0];
+            $args = $parts[1] ?? '';
             
             // Handle commands
-            if (strpos($text, '/start') === 0) {
-                return $this->handleStart($chatId);
+            switch ($command) {
+                case '/start':
+                    return $this->handleStart($chatId, $from);
+                    
+                case '/setapi':
+                    return $this->handleSetApi($chatId, $from, $args);
+                    
+                case '/mylinks':
+                    return $this->handleMyLinks($chatId, $from);
+                    
+                case '/stats':
+                    return $this->handleStats($chatId, $from);
+                    
+                case '/profile':
+                    return $this->handleProfile($chatId, $from);
+                    
+                case '/help':
+                    return $this->handleHelp($chatId);
+                    
+                default:
+                    // Unknown command
+                    $response = "❓ Unknown command: $command\n\n";
+                    $response .= "Use /help to see available commands.";
+                    return $this->sendMessage($chatId, $response);
             }
-            
-            if (strpos($text, '/help') === 0) {
-                return $this->handleHelp($chatId);
-            }
-            
-            if (strpos($text, '/status') === 0) {
-                return $this->handleStatus($chatId);
-            }
-            
-            // Process message with links
-            return $this->processMessage($message);
             
         } catch (Exception $e) {
             botLog("Error handling update: " . $e->getMessage(), 'ERROR');
             if (isset($chatId)) {
                 $this->sendMessage($chatId, 
-                    "❌ Sorry, an error occurred while processing your request. Please try again later."
+                    "❌ Sorry, an error occurred. Please try again later."
                 );
             }
         }

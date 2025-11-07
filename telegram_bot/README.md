@@ -1,15 +1,17 @@
-# 🤖 Telegram Link Converter Bot
+# 🤖 Telegram Link Shortener Bot with User Stats
 
-Yeh bot aapki site ke API se connect hokar video links ko convert karta hai. Aap Telegram par koi bhi message send karo with text, images, aur links - bot automatically links extract karke convert karke wapas bhej dega.
+Yeh advanced Telegram bot aapko apne shortened links manage karne aur statistics dekhne deta hai. Har user apni API key dalega aur uska bot me account ban jayega.
 
 ## ✨ Features
 
-- 🔗 **Link Conversion**: Terabox, StreamTape, FileMoon, GoFile, aur bahut saare platforms ke links convert karta hai
-- 📸 **Image Support**: Images ke saath messages bhi handle karta hai
-- 📝 **Text Preservation**: Aapka original text maintain karta hai aur sirf links ko replace karta hai
-- ⚡ **Fast Processing**: Quick response time ke saath links convert karta hai
-- 🔒 **Secure**: Safe aur secure API calls
-- 📊 **Logging**: Complete activity logs
+- 🔑 **User Registration**: API key se automatic account linking
+- 🔗 **View Links**: Apne saare shortened links dekho (15 per page)
+- 📊 **Statistics**: Complete statistics with views aur earnings
+- 📄 **Pagination**: Easy navigation with Previous/Next buttons
+- 💰 **Earnings Tracking**: Total aur daily earnings dekho
+- 👤 **Profile Management**: Apni profile information dekho
+- ⚡ **Fast & Secure**: Safe aur secure API calls
+- 📈 **Daily Stats**: Aaj ke views aur earnings track karo
 
 ## 📋 Requirements
 
@@ -129,9 +131,63 @@ Video 3: https://filemoon.sx/e/xyz789
 
 ## 📱 Bot Commands
 
-- `/start` - Bot ko start karo aur welcome message dekho
+- `/start` - Bot ko start karo aur register ho jao
+- `/setapi YOUR_API_KEY` - Apni API key configure karo
+- `/mylinks` - Apne saare shortened links dekho (15 per page)
+- `/stats` - Apne overall statistics dekho
+- `/profile` - Apni profile information dekho
 - `/help` - Help aur instructions dekho
-- `/status` - Bot status check karo
+
+## 🎯 Quick Start Guide
+
+### 1. Bot Setup (First Time)
+
+```
+User: /start
+Bot: Welcome message + Setup instructions
+
+User: /setapi abc123def456...
+Bot: ✅ API Key configured successfully!
+```
+
+### 2. View Your Links
+
+```
+User: /mylinks
+Bot: Shows 15 links with:
+     - Short code
+     - URL
+     - Views count
+     - Earnings
+     - Creation date
+     [Previous] [Next] buttons for navigation
+```
+
+### 3. Check Statistics
+
+```
+User: /stats
+Bot: Shows:
+     📈 Overall Stats:
+     - Total Links
+     - Total Views
+     - Total Earnings
+     
+     📅 Today's Stats:
+     - Today's Views
+     - Today's Earnings
+```
+
+### 4. View Profile
+
+```
+User: /profile
+Bot: Shows:
+     - Telegram info
+     - API key status
+     - Linked account details
+     - Registration date
+```
 
 ## 🔧 Advanced Configuration
 
