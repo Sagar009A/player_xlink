@@ -1,0 +1,1100 @@
+[2025-11-02 08:33:13] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:33:13] [info] [TeraBox] Using database cached token
+[2025-11-02 08:33:13] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:33:14] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:33:14] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:33:14] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:33:17] [warning] [TeraBox] cURL error (attempt 2/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:33:17] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:33:17] [info] [TeraBox] Waiting 6 seconds before retry attempt 2...
+[2025-11-02 08:33:23] [warning] [TeraBox] cURL error (attempt 3/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:33:23] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:33:23] [info] [TeraBox] Waiting 12 seconds before retry attempt 3...
+[2025-11-02 08:33:34] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:33:34] [info] [TeraBox] Using database cached token
+[2025-11-02 08:33:34] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:33:34] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:33:34] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:33:34] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:33:36] [warning] [TeraBox] cURL error (attempt 4/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:33:36] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:33:36] [error] [TeraBox] Failed after 4 attempts: OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:33:36] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:33:36] [info] [TeraBox] Using database cached token
+[2025-11-02 08:33:36] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:33:37] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 08:33:37] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:33:37] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:33:37] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:33:37] [info] [TeraBox] Using database cached token
+[2025-11-02 08:33:37] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:33:37] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:33:37] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:33:37] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:33:39] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 08:33:39] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:33:39] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:33:39] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:33:39] [info] [TeraBox] Using database cached token
+[2025-11-02 08:33:39] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:33:39] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:33:39] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:33:39] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:33:40] [warning] [TeraBox] cURL error (attempt 2/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:33:40] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:33:40] [info] [TeraBox] Waiting 6 seconds before retry attempt 2...
+[2025-11-02 08:33:44] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 08:33:44] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 08:33:44] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 08:33:44] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:33:44] [info] [TeraBox] Using database cached token
+[2025-11-02 08:33:44] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:33:45] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 08:33:45] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:33:45] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:33:45] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:33:45] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:33:45] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 08:33:45] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 08:33:45] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 08:33:45] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 08:33:45] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 08:33:45] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 08:33:45] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 08:33:48] [info] [TeraBox] Successfully connected to TeraBox API (attempt 3)
+[2025-11-02 08:33:48] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 08:33:48] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 08:33:48] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:33:48] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:33:48] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 08:33:48] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 08:33:48] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 08:33:48] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 08:33:48] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 08:33:48] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 08:33:48] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 08:33:48] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 08:33:48] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 08:33:48] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 08:33:48] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 08:33:48] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 08:33:51] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 08:33:51] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 08:33:51] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 08:33:51] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 08:33:51] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 08:34:14] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 08:34:14] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 08:34:14] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 08:34:16] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 08:34:16] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 08:34:16] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 08:39:41] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:39:41] [info] [TeraBox] Using database cached token
+[2025-11-02 08:39:41] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:39:42] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 08:39:42] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:39:42] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:39:42] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:39:42] [info] [TeraBox] Using database cached token
+[2025-11-02 08:39:42] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:39:43] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 08:39:43] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:39:43] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:39:43] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:39:43] [info] [TeraBox] Using database cached token
+[2025-11-02 08:39:43] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:39:44] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 08:39:44] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:39:44] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:39:44] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:39:45] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:39:45] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 08:39:45] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 08:39:45] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 08:39:45] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 08:39:45] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 08:39:45] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 08:39:45] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 08:39:48] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 08:39:48] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 08:39:48] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 08:39:48] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 08:39:48] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 08:39:50] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:39:50] [info] [TeraBox] Using database cached token
+[2025-11-02 08:39:50] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:39:51] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 08:39:51] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 08:39:51] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 08:39:51] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:39:51] [info] [TeraBox] Using database cached token
+[2025-11-02 08:39:51] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:39:51] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:39:51] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:39:51] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:39:55] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:39:55] [info] [TeraBox] Using database cached token
+[2025-11-02 08:39:55] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:39:55] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:39:55] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:39:55] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:39:55] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 08:39:55] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:39:55] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:39:55] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:39:55] [info] [TeraBox] Using database cached token
+[2025-11-02 08:39:55] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:39:56] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:39:56] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:39:56] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:39:59] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 08:39:59] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:39:59] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:39:59] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:39:59] [info] [TeraBox] Using database cached token
+[2025-11-02 08:39:59] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:40:00] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 08:40:00] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 08:40:00] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 08:40:00] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:40:00] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:40:00] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:40:00] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:40:00] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:40:00] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 08:40:00] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 08:40:00] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 08:40:00] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 08:40:00] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 08:40:00] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 08:40:00] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 08:40:03] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 08:40:03] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 08:40:03] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 08:40:03] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 08:40:03] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 08:40:04] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 08:40:04] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:40:04] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:40:04] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:40:04] [info] [TeraBox] Using database cached token
+[2025-11-02 08:40:04] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:40:04] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:40:04] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:40:04] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:40:08] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 08:40:08] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:40:08] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:40:08] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:40:09] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:40:09] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 08:40:09] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 08:40:09] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 08:40:09] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 08:40:09] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 08:40:09] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 08:40:09] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 08:40:12] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 08:40:12] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 08:40:12] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 08:40:12] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 08:40:12] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 08:40:17] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 08:40:17] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 08:40:17] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 08:40:32] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 08:40:32] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 08:40:32] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 08:40:39] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 08:40:39] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 08:40:39] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 08:53:21] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:53:21] [info] [TeraBox] Using database cached token
+[2025-11-02 08:53:21] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:53:22] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 08:53:22] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:53:22] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:53:22] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:53:22] [info] [TeraBox] Using database cached token
+[2025-11-02 08:53:22] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:53:22] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:53:22] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:53:22] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:53:26] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:53:26] [info] [TeraBox] Using database cached token
+[2025-11-02 08:53:26] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 08:53:26] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 08:53:26] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:53:26] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:53:26] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:53:26] [info] [TeraBox] Using database cached token
+[2025-11-02 08:53:26] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:53:27] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:53:27] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:53:27] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:53:27] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 08:53:27] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:53:27] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:53:27] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:53:27] [info] [TeraBox] Using database cached token
+[2025-11-02 08:53:27] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 08:53:27] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:53:27] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:53:27] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 08:53:30] [warning] [TeraBox] cURL error (attempt 2/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:53:30] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:53:30] [info] [TeraBox] Waiting 6 seconds before retry attempt 2...
+[2025-11-02 08:53:31] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 08:53:31] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:53:31] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:53:31] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:53:31] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:53:31] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 08:53:31] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 08:53:31] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 08:53:31] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 08:53:31] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 08:53:31] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 08:53:31] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 08:53:34] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 08:53:34] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 08:53:34] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 08:53:34] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 08:53:34] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 08:53:37] [warning] [TeraBox] cURL error (attempt 3/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:53:37] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:53:37] [info] [TeraBox] Waiting 12 seconds before retry attempt 3...
+[2025-11-02 08:53:49] [warning] [TeraBox] cURL error (attempt 4/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:53:49] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 08:53:49] [error] [TeraBox] Failed after 4 attempts: OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 08:53:49] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:53:49] [info] [TeraBox] Using database cached token
+[2025-11-02 08:53:49] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 08:53:50] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 08:53:50] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 08:53:50] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 08:53:50] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:53:50] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 08:53:50] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 08:53:50] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 08:53:50] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 08:53:50] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 08:53:50] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 08:53:50] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 08:53:50] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 08:53:53] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 08:53:53] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 08:53:53] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 08:53:53] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 08:53:53] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 08:54:03] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 08:54:03] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 08:54:03] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 08:54:22] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 08:54:22] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 08:54:22] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 09:37:49] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 09:37:49] [info] [TeraBox] Using database cached token
+[2025-11-02 09:37:49] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 09:37:50] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 09:37:50] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:37:50] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:37:50] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 09:37:50] [info] [TeraBox] Using database cached token
+[2025-11-02 09:37:50] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 09:37:50] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 09:37:50] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 09:37:50] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 09:37:54] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 09:37:54] [info] [TeraBox] Using database cached token
+[2025-11-02 09:37:54] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 09:37:55] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 09:37:55] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:37:55] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:37:55] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 09:37:55] [info] [TeraBox] Using database cached token
+[2025-11-02 09:37:55] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 09:37:55] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 09:37:55] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 09:37:55] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 09:37:55] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 09:37:55] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 09:37:55] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 09:37:55] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 09:37:55] [info] [TeraBox] Using database cached token
+[2025-11-02 09:37:55] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 09:37:56] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 09:37:56] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 09:37:56] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 09:38:00] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 09:38:00] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:38:00] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:38:00] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 09:38:00] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 09:38:00] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 09:38:00] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 09:38:00] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 09:38:00] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 09:38:00] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 09:38:00] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 09:38:00] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 09:38:00] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 09:38:00] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:38:00] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:38:00] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 09:38:00] [info] [TeraBox] Using database cached token
+[2025-11-02 09:38:00] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 09:38:01] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 09:38:01] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 09:38:01] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 09:38:03] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 09:38:03] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 09:38:03] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 09:38:03] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 09:38:03] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 09:38:05] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 09:38:05] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 09:38:05] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 09:38:05] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 09:38:05] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 09:38:05] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 09:38:05] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 09:38:05] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 09:38:05] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 09:38:05] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 09:38:05] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 09:38:05] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 09:38:07] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 09:38:07] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 09:38:07] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 09:38:07] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 09:38:07] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 09:38:31] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 09:38:31] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 09:38:31] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 09:38:36] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 09:38:36] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 09:38:36] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 09:55:04] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 09:55:04] [info] [TeraBox] Using database cached token
+[2025-11-02 09:55:04] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 09:55:04] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 09:55:04] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 09:55:04] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 09:55:07] [warning] [TeraBox] cURL error (attempt 2/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 09:55:07] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 09:55:07] [info] [TeraBox] Waiting 6 seconds before retry attempt 2...
+[2025-11-02 09:55:14] [info] [TeraBox] Successfully connected to TeraBox API (attempt 3)
+[2025-11-02 09:55:14] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:55:14] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:55:14] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 09:55:14] [info] [TeraBox] Using database cached token
+[2025-11-02 09:55:14] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 09:55:15] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 09:55:15] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:55:15] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:55:15] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 09:55:15] [info] [TeraBox] Using database cached token
+[2025-11-02 09:55:15] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 09:55:16] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 09:55:16] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:55:16] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:55:16] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 09:55:17] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 09:55:17] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 09:55:17] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 09:55:17] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 09:55:17] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 09:55:17] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 09:55:17] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 09:55:17] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 09:55:20] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 09:55:20] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 09:55:20] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 09:55:20] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 09:55:20] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 09:55:49] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 09:55:49] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 09:55:49] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 09:57:12] [info] [Diskwala] Attempting to extract Diskwala file: 68f926e84d5953b6cf262da0
+[2025-11-02 09:57:13] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68f926e84d5953b6cf262da0
+[2025-11-02 09:57:13] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 09:57:13] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 09:57:13] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 09:57:29] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 09:57:29] [info] [TeraBox] Using database cached token
+[2025-11-02 09:57:29] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 09:57:30] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 09:57:30] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:57:30] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:57:30] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 09:57:30] [info] [TeraBox] Using database cached token
+[2025-11-02 09:57:30] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 09:57:30] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 09:57:30] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 09:57:30] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 09:57:33] [warning] [TeraBox] cURL error (attempt 2/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 09:57:33] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 09:57:33] [info] [TeraBox] Waiting 6 seconds before retry attempt 2...
+[2025-11-02 09:57:40] [info] [TeraBox] Successfully connected to TeraBox API (attempt 3)
+[2025-11-02 09:57:40] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:57:40] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:57:40] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 09:57:40] [info] [TeraBox] Using database cached token
+[2025-11-02 09:57:40] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 09:57:42] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 09:57:42] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 09:57:42] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 09:57:42] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 09:57:42] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 09:57:42] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 09:57:42] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 09:57:42] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 09:57:42] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 09:57:42] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 09:57:42] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 09:57:42] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 09:57:45] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 09:57:45] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 09:57:45] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 09:57:45] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 09:57:45] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 09:58:14] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 09:58:14] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 09:58:14] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 10:04:35] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:04:35] [info] [TeraBox] Using database cached token
+[2025-11-02 10:04:35] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:04:35] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:04:35] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:04:35] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 10:04:39] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 10:04:39] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 10:04:39] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 10:04:39] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:04:39] [info] [TeraBox] Using database cached token
+[2025-11-02 10:04:39] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:04:40] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:04:40] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:04:40] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:04:40] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:04:40] [info] [TeraBox] Using database cached token
+[2025-11-02 10:04:40] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:04:41] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:04:41] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:04:41] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 10:04:44] [warning] [TeraBox] cURL error (attempt 2/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:04:44] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:04:44] [info] [TeraBox] Waiting 6 seconds before retry attempt 2...
+[2025-11-02 10:04:51] [info] [TeraBox] Successfully connected to TeraBox API (attempt 3)
+[2025-11-02 10:04:51] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 10:04:51] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 10:04:51] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:04:51] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:04:51] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:04:51] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:04:51] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:04:51] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 10:04:51] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 10:04:51] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 10:04:51] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 10:04:54] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 10:04:54] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 10:04:54] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 10:04:54] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 10:04:54] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 10:05:23] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 10:05:23] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 10:05:23] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 10:25:23] [info] [TeraBox] Extracting TeraBox video - shortcode: 1TIZoUbQaiogVBF03otnqDQ
+[2025-11-02 10:25:23] [info] [TeraBox] Using database cached token
+[2025-11-02 10:25:23] [info] [TeraBox] Fetching video info for shortcode: 1TIZoUbQaiogVBF03otnqDQ
+[2025-11-02 10:25:24] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:25:24] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:25:24] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:26:12] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:26:12] [info] [TeraBox] Using database cached token
+[2025-11-02 10:26:12] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:26:13] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:26:13] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:26:13] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:26:13] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:26:13] [info] [TeraBox] Using database cached token
+[2025-11-02 10:26:13] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:26:13] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:26:13] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:26:13] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 10:26:17] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 10:26:17] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:26:17] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:26:17] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:26:17] [info] [TeraBox] Using database cached token
+[2025-11-02 10:26:17] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:26:18] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:26:18] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:26:18] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:26:18] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:26:19] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:26:19] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:26:19] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:26:19] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:26:19] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 10:26:19] [error] [Streaam.net] Error: Could not extract video ID from URL
+[2025-11-02 10:26:19] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 10:26:19] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 10:26:22] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 10:26:22] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 10:26:22] [error] [NowPlayToc] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 10:26:22] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 10:26:22] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 10:26:51] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 10:26:51] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 10:26:51] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 10:29:10] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:29:10] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:29:10] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:29:10] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:29:10] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:29:14] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:29:15] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:29:15] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:29:15] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:29:15] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:29:19] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:29:19] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:29:19] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:29:19] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:29:19] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:29:27] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:29:27] [info] [TeraBox] Using database cached token
+[2025-11-02 10:29:27] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:29:28] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:29:28] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:29:28] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:37:25] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:37:25] [info] [TeraBox] Using database cached token
+[2025-11-02 10:37:25] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:37:26] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:37:26] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:37:26] [info] [TeraBox] Waiting 3.75 seconds before retry attempt 1...
+[2025-11-02 10:37:30] [warning] [TeraBox] cURL error (attempt 2/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:37:30] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:37:30] [info] [TeraBox] Waiting 6.51 seconds before retry attempt 2...
+[2025-11-02 10:37:37] [warning] [TeraBox] cURL error (attempt 3/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:37:37] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:37:37] [info] [TeraBox] Waiting 12.6 seconds before retry attempt 3...
+[2025-11-02 10:37:50] [info] [TeraBox] Successfully connected to TeraBox API (attempt 4)
+[2025-11-02 10:37:50] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:37:50] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:52:35] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:52:35] [info] [TeraBox] Using database cached token
+[2025-11-02 10:52:35] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:52:37] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:52:37] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 10:52:37] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 10:52:37] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:52:37] [info] [TeraBox] Using database cached token
+[2025-11-02 10:52:37] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:52:39] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:52:39] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:52:39] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:52:39] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:52:39] [info] [TeraBox] Using database cached token
+[2025-11-02 10:52:39] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:52:39] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:52:39] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:52:39] [info] [TeraBox] Waiting 3.28 seconds before retry attempt 1...
+[2025-11-02 10:52:44] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 10:52:44] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 10:52:44] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 10:52:44] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:52:44] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:52:44] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:52:44] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:52:44] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:52:44] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 10:52:44] [info] [Streaam.net] Video ID: OddydUbFa$clz5kgpi1
+[2025-11-02 10:52:45] [warning] [Streaam.net] Detected anti-bot protection or code obfuscation
+[2025-11-02 10:52:45] [info] [Streaam.net] Found base64 encoded filename: getnewlink.com_[MILFY_374FABE8.mp4
+[2025-11-02 10:52:45] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 10:52:45] [info] [Streaam.net] Video ID: OddydUbFa$clz5kgpi1
+[2025-11-02 10:52:46] [warning] [Streaam.net] Detected anti-bot protection or code obfuscation
+[2025-11-02 10:52:46] [info] [Streaam.net] Found base64 encoded filename: getnewlink.com_[MILFY_374FABE8.mp4
+[2025-11-02 10:52:59] [error] [Streaam.net] Failed to extract video URL from all methods
+[2025-11-02 10:52:59] [debug] [Streaam.net] HTML preview (first 1000 chars): <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streaam</title>
+
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" />
+    
+<style>
+#vidimg,#con{position:relative;}#vidimg p{position:absolute;}.maincolor{background-color:#121212;}#vidimg p{top:66%;}#bottombar p,#vidimg p,.maincolor,[class~=headerc]{color:white;}footer{bottom:0;}#actionbtn #playbtn{margin-left:auto;}#vidimg p{text-align:center;}footer,[class~=headerc],#vidimg p{width:100%;}#actionbtn,#bottombar{display:flex;}[class~=headerc]{height:60px;}footer,[class~=headerc]{padding-left:.104166667in;}#buttonbar{float:right;}[class~=headerc],footer{padding-bottom:.104166667in;}#vidimg p{font-size:10.5pt;}#actionbtn #playbtn{margin-right:4%;}#vidimg p{font-weight:500;}[class~=headerc] img{float:left;}footer,[class~=headerc]{padding-right:.104166667in;}#vidimg span{font-size:12px;}[class~=headerc],footer{padding-t
+[2025-11-02 10:53:00] [error] [Streaam.net] Failed to extract video URL from all methods
+[2025-11-02 10:53:00] [debug] [Streaam.net] HTML preview (first 1000 chars): <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streaam</title>
+
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" />
+    
+<style>
+#vidimg,#con{position:relative;}#vidimg p{position:absolute;}.maincolor{background-color:#121212;}#vidimg p{top:66%;}#bottombar p,#vidimg p,.maincolor,[class~=headerc]{color:white;}footer{bottom:0;}#actionbtn #playbtn{margin-left:auto;}#vidimg p{text-align:center;}footer,[class~=headerc],#vidimg p{width:100%;}#actionbtn,#bottombar{display:flex;}[class~=headerc]{height:60px;}footer,[class~=headerc]{padding-left:.104166667in;}#buttonbar{float:right;}[class~=headerc],footer{padding-bottom:.104166667in;}#vidimg p{font-size:10.5pt;}#actionbtn #playbtn{margin-right:4%;}#vidimg p{font-weight:500;}[class~=headerc] img{float:left;}footer,[class~=headerc]{padding-right:.104166667in;}#vidimg span{font-size:12px;}[class~=headerc],footer{padding-t
+[2025-11-02 10:53:12] [error] [Streaam.net] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 10:53:13] [error] [Streaam.net] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 10:53:13] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 10:53:13] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 10:53:24] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:53:24] [info] [TeraBox] Using database cached token
+[2025-11-02 10:53:24] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:53:25] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:53:25] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:53:25] [info] [TeraBox] Waiting 3.53 seconds before retry attempt 1...
+[2025-11-02 10:53:29] [warning] [TeraBox] cURL error (attempt 2/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:53:29] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:53:29] [info] [TeraBox] Waiting 6.23 seconds before retry attempt 2...
+[2025-11-02 10:53:30] [debug] [NowPlayToc] Found __NUXT_DATA__ script
+[2025-11-02 10:53:30] [debug] [NowPlayToc] Parsed Nuxt data array
+[2025-11-02 10:53:30] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 10:53:30] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 10:53:30] [warning] [NowPlayToc] Detected domain migration to nowplaylee.com
+[2025-11-02 10:53:30] [error] [NowPlayToc] Error: NowPlayToc has migrated to a new domain. The video may require additional authentication or the link has expired.
+[2025-11-02 10:53:30] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 10:53:30] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 10:53:36] [warning] [TeraBox] cURL error (attempt 3/4): [35] error:0A00042E:SSL routines::tlsv1 alert protocol version
+[2025-11-02 10:53:36] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:53:36] [info] [TeraBox] Waiting 12.21 seconds before retry attempt 3...
+[2025-11-02 10:53:44] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:53:44] [info] [TeraBox] Using database cached token
+[2025-11-02 10:53:44] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:53:46] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:53:46] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:53:46] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:53:46] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:53:46] [info] [TeraBox] Using database cached token
+[2025-11-02 10:53:46] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:53:47] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:53:47] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:53:47] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:53:47] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:53:47] [info] [TeraBox] Using database cached token
+[2025-11-02 10:53:47] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:53:48] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:53:48] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:53:48] [info] [TeraBox] Waiting 3.15 seconds before retry attempt 1...
+[2025-11-02 10:53:49] [info] [TeraBox] Successfully connected to TeraBox API (attempt 4)
+[2025-11-02 10:53:49] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:53:49] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:53:49] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:53:49] [info] [TeraBox] Using database cached token
+[2025-11-02 10:53:49] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:53:50] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:53:50] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:53:50] [info] [TeraBox] Waiting 3.65 seconds before retry attempt 1...
+[2025-11-02 10:53:52] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 10:53:52] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:53:52] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:53:52] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:53:53] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:53:53] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:53:53] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:53:53] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:53:53] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 10:53:53] [info] [Streaam.net] Video ID: OddydUbFa$clz5kgpi1
+[2025-11-02 10:53:53] [warning] [Streaam.net] Detected anti-bot protection or code obfuscation
+[2025-11-02 10:53:53] [info] [Streaam.net] Found base64 encoded filename: getnewlink.com_[MILFY_374FABE8.mp4
+[2025-11-02 10:53:54] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 10:53:54] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:53:54] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:53:54] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:53:54] [info] [TeraBox] Using database cached token
+[2025-11-02 10:53:54] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:53:56] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:53:56] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:53:56] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:53:56] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:53:56] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:53:56] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:53:56] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:53:56] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:53:56] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 10:53:56] [info] [Streaam.net] Video ID: OddydUbFa$clz5kgpi1
+[2025-11-02 10:53:57] [warning] [Streaam.net] Detected anti-bot protection or code obfuscation
+[2025-11-02 10:53:57] [info] [Streaam.net] Found base64 encoded filename: getnewlink.com_[MILFY_374FABE8.mp4
+[2025-11-02 10:53:59] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 10:53:59] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 10:53:59] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 10:54:06] [error] [Streaam.net] Failed to extract video URL from all methods
+[2025-11-02 10:54:06] [debug] [Streaam.net] HTML preview (first 1000 chars): <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streaam</title>
+
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" />
+    
+<style>
+#vidimg,#con{position:relative;}#vidimg p{position:absolute;}.maincolor{background-color:#121212;}#vidimg p{top:66%;}#bottombar p,#vidimg p,.maincolor,[class~=headerc]{color:white;}footer{bottom:0;}#actionbtn #playbtn{margin-left:auto;}#vidimg p{text-align:center;}footer,[class~=headerc],#vidimg p{width:100%;}#actionbtn,#bottombar{display:flex;}[class~=headerc]{height:60px;}footer,[class~=headerc]{padding-left:.104166667in;}#buttonbar{float:right;}[class~=headerc],footer{padding-bottom:.104166667in;}#vidimg p{font-size:10.5pt;}#actionbtn #playbtn{margin-right:4%;}#vidimg p{font-weight:500;}[class~=headerc] img{float:left;}footer,[class~=headerc]{padding-right:.104166667in;}#vidimg span{font-size:12px;}[class~=headerc],footer{padding-t
+[2025-11-02 10:54:10] [error] [Streaam.net] Failed to extract video URL from all methods
+[2025-11-02 10:54:10] [debug] [Streaam.net] HTML preview (first 1000 chars): <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streaam</title>
+
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" />
+    
+<style>
+#vidimg,#con{position:relative;}#vidimg p{position:absolute;}.maincolor{background-color:#121212;}#vidimg p{top:66%;}#bottombar p,#vidimg p,.maincolor,[class~=headerc]{color:white;}footer{bottom:0;}#actionbtn #playbtn{margin-left:auto;}#vidimg p{text-align:center;}footer,[class~=headerc],#vidimg p{width:100%;}#actionbtn,#bottombar{display:flex;}[class~=headerc]{height:60px;}footer,[class~=headerc]{padding-left:.104166667in;}#buttonbar{float:right;}[class~=headerc],footer{padding-bottom:.104166667in;}#vidimg p{font-size:10.5pt;}#actionbtn #playbtn{margin-right:4%;}#vidimg p{font-weight:500;}[class~=headerc] img{float:left;}footer,[class~=headerc]{padding-right:.104166667in;}#vidimg span{font-size:12px;}[class~=headerc],footer{padding-t
+[2025-11-02 10:54:11] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:54:11] [info] [TeraBox] Using database cached token
+[2025-11-02 10:54:11] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:54:13] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:54:13] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:54:13] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:54:13] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:54:13] [info] [TeraBox] Using database cached token
+[2025-11-02 10:54:13] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:54:15] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:54:15] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:54:15] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:54:15] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:54:15] [info] [TeraBox] Using database cached token
+[2025-11-02 10:54:15] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:54:16] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:54:16] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:54:16] [info] [TeraBox] Waiting 3.12 seconds before retry attempt 1...
+[2025-11-02 10:54:19] [error] [Streaam.net] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 10:54:19] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 10:54:19] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 10:54:20] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 10:54:20] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 10:54:20] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 10:54:20] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:54:20] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:54:20] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:54:20] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:54:20] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:54:20] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 10:54:20] [info] [Streaam.net] Video ID: OddydUbFa$clz5kgpi1
+[2025-11-02 10:54:21] [warning] [Streaam.net] Detected anti-bot protection or code obfuscation
+[2025-11-02 10:54:21] [info] [Streaam.net] Found base64 encoded filename: getnewlink.com_[MILFY_374FABE8.mp4
+[2025-11-02 10:54:23] [error] [Streaam.net] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 10:54:23] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 10:54:23] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 10:54:33] [error] [Streaam.net] Failed to extract video URL from all methods
+[2025-11-02 10:54:33] [debug] [Streaam.net] HTML preview (first 1000 chars): <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streaam</title>
+
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" />
+    
+<style>
+#vidimg,#con{position:relative;}#vidimg p{position:absolute;}.maincolor{background-color:#121212;}#vidimg p{top:66%;}#bottombar p,#vidimg p,.maincolor,[class~=headerc]{color:white;}footer{bottom:0;}#actionbtn #playbtn{margin-left:auto;}#vidimg p{text-align:center;}footer,[class~=headerc],#vidimg p{width:100%;}#actionbtn,#bottombar{display:flex;}[class~=headerc]{height:60px;}footer,[class~=headerc]{padding-left:.104166667in;}#buttonbar{float:right;}[class~=headerc],footer{padding-bottom:.104166667in;}#vidimg p{font-size:10.5pt;}#actionbtn #playbtn{margin-right:4%;}#vidimg p{font-weight:500;}[class~=headerc] img{float:left;}footer,[class~=headerc]{padding-right:.104166667in;}#vidimg span{font-size:12px;}[class~=headerc],footer{padding-t
+[2025-11-02 10:54:35] [debug] [NowPlayToc] Found __NUXT_DATA__ script
+[2025-11-02 10:54:35] [debug] [NowPlayToc] Parsed Nuxt data array
+[2025-11-02 10:54:35] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 10:54:35] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 10:54:35] [warning] [NowPlayToc] Detected domain migration to nowplaylee.com
+[2025-11-02 10:54:35] [error] [NowPlayToc] Error: NowPlayToc has migrated to a new domain. The video may require additional authentication or the link has expired.
+[2025-11-02 10:54:35] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 10:54:35] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 10:54:39] [debug] [NowPlayToc] Found __NUXT_DATA__ script
+[2025-11-02 10:54:39] [debug] [NowPlayToc] Parsed Nuxt data array
+[2025-11-02 10:54:39] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 10:54:39] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 10:54:39] [warning] [NowPlayToc] Detected domain migration to nowplaylee.com
+[2025-11-02 10:54:39] [error] [NowPlayToc] Error: NowPlayToc has migrated to a new domain. The video may require additional authentication or the link has expired.
+[2025-11-02 10:54:39] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 10:54:39] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 10:54:47] [error] [Streaam.net] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 10:54:47] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 10:54:47] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 10:55:02] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:55:02] [info] [TeraBox] Using database cached token
+[2025-11-02 10:55:02] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:55:02] [debug] [NowPlayToc] Found __NUXT_DATA__ script
+[2025-11-02 10:55:02] [debug] [NowPlayToc] Parsed Nuxt data array
+[2025-11-02 10:55:02] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 10:55:02] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 10:55:02] [warning] [NowPlayToc] Detected domain migration to nowplaylee.com
+[2025-11-02 10:55:02] [error] [NowPlayToc] Error: NowPlayToc has migrated to a new domain. The video may require additional authentication or the link has expired.
+[2025-11-02 10:55:02] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 10:55:02] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 10:55:03] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 10:55:03] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 10:55:03] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 10:55:03] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-02 10:55:03] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-02 10:55:03] [info] [TeraBox] Waiting 3 seconds before retry attempt 1...
+[2025-11-02 10:55:07] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-02 10:55:07] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:55:07] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:55:07] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:55:07] [info] [TeraBox] Using database cached token
+[2025-11-02 10:55:07] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:55:08] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 10:55:08] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 10:55:08] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 10:55:09] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:55:09] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:55:09] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:55:09] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:55:09] [info] [TeraBox] Using database cached token
+[2025-11-02 10:55:09] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:55:10] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:55:10] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 10:55:10] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 10:55:10] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:55:11] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:55:11] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:55:11] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:55:11] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:55:11] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 10:55:11] [info] [Streaam.net] Video ID: OddydUbFa$clz5kgpi1
+[2025-11-02 10:55:11] [warning] [Streaam.net] Detected anti-bot protection or code obfuscation
+[2025-11-02 10:55:11] [info] [Streaam.net] Found base64 encoded filename: getnewlink.com_[MILFY_374FABE8.mp4
+[2025-11-02 10:55:24] [error] [Streaam.net] Failed to extract video URL from all methods
+[2025-11-02 10:55:24] [debug] [Streaam.net] HTML preview (first 1000 chars): <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streaam</title>
+
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" />
+    
+<style>
+#vidimg,#con{position:relative;}#vidimg p{position:absolute;}.maincolor{background-color:#121212;}#vidimg p{top:66%;}#bottombar p,#vidimg p,.maincolor,[class~=headerc]{color:white;}footer{bottom:0;}#actionbtn #playbtn{margin-left:auto;}#vidimg p{text-align:center;}footer,[class~=headerc],#vidimg p{width:100%;}#actionbtn,#bottombar{display:flex;}[class~=headerc]{height:60px;}footer,[class~=headerc]{padding-left:.104166667in;}#buttonbar{float:right;}[class~=headerc],footer{padding-bottom:.104166667in;}#vidimg p{font-size:10.5pt;}#actionbtn #playbtn{margin-right:4%;}#vidimg p{font-weight:500;}[class~=headerc] img{float:left;}footer,[class~=headerc]{padding-right:.104166667in;}#vidimg span{font-size:12px;}[class~=headerc],footer{padding-t
+[2025-11-02 10:55:31] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 10:55:31] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 10:55:31] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 10:55:37] [error] [Streaam.net] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 10:55:37] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 10:55:37] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 10:55:52] [debug] [NowPlayToc] Found __NUXT_DATA__ script
+[2025-11-02 10:55:52] [debug] [NowPlayToc] Parsed Nuxt data array
+[2025-11-02 10:55:52] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 10:55:52] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 10:55:52] [warning] [NowPlayToc] Detected domain migration to nowplaylee.com
+[2025-11-02 10:55:52] [error] [NowPlayToc] Error: NowPlayToc has migrated to a new domain. The video may require additional authentication or the link has expired.
+[2025-11-02 10:55:52] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 10:55:52] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 10:56:15] [info] [TeraBox] Extracting TeraBox video - shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:56:15] [info] [TeraBox] Using database cached token
+[2025-11-02 10:56:15] [info] [TeraBox] Fetching video info for shortcode: 1yQMI_F-5EAPsJTw87VHlBA
+[2025-11-02 10:56:17] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:56:17] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 10:56:17] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 10:56:17] [info] [TeraBox] Extracting TeraBox video - shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:56:17] [info] [TeraBox] Using database cached token
+[2025-11-02 10:56:17] [info] [TeraBox] Fetching video info for shortcode: 185WWXZWZMRuWXJ16k7KQ5Q
+[2025-11-02 10:56:18] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:56:18] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-02 10:56:18] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-02 10:56:18] [info] [TeraBox] Extracting TeraBox video - shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:56:18] [info] [TeraBox] Using database cached token
+[2025-11-02 10:56:18] [info] [TeraBox] Fetching video info for shortcode: 1rp-mcOxzM3PnCVk9q_D7VA
+[2025-11-02 10:56:20] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-02 10:56:20] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-02 10:56:20] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-02 10:56:20] [info] [Diskwala] Attempting to extract Diskwala file: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:56:21] [error] [Diskwala] Failed to extract video URL from all methods for file ID: 68ef8b57fa94e97eb28d1e9c
+[2025-11-02 10:56:21] [debug] [Diskwala] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="/manifest.json"/><link rel="icon" href="/favicon.ico" sizes="any"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/><title>DiskWala | File Sharing & Cloud Storage</title><meta name="title" content="DiskWala"/><meta name="description" content="A cloud Storage and File Sharing Service with unlimited storage and all kind of files formats supported. The ultimate cloud storage and file-sharing service designed to cater to your every digital need. In the era where data is king, Diskwala stands out as a beacon of reliability, security, and innovation, off
+[2025-11-02 10:56:21] [warning] [Diskwala] Detected React/SPA app - page structure has changed
+[2025-11-02 10:56:21] [error] [Diskwala] Error: Diskwala has changed to a React app. Please contact support for an extractor update.
+[2025-11-02 10:56:21] [info] [Streaam.net] Extracting Streaam.net video: https://streaam.net/T/OddydUbFa$clz5kgpi1
+[2025-11-02 10:56:21] [info] [Streaam.net] Video ID: OddydUbFa$clz5kgpi1
+[2025-11-02 10:56:21] [warning] [Streaam.net] Detected anti-bot protection or code obfuscation
+[2025-11-02 10:56:21] [info] [Streaam.net] Found base64 encoded filename: getnewlink.com_[MILFY_374FABE8.mp4
+[2025-11-02 10:56:21] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 10:56:21] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 10:56:21] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.
+[2025-11-02 10:56:34] [error] [Streaam.net] Failed to extract video URL from all methods
+[2025-11-02 10:56:34] [debug] [Streaam.net] HTML preview (first 1000 chars): <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streaam</title>
+
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" />
+    
+<style>
+#vidimg,#con{position:relative;}#vidimg p{position:absolute;}.maincolor{background-color:#121212;}#vidimg p{top:66%;}#bottombar p,#vidimg p,.maincolor,[class~=headerc]{color:white;}footer{bottom:0;}#actionbtn #playbtn{margin-left:auto;}#vidimg p{text-align:center;}footer,[class~=headerc],#vidimg p{width:100%;}#actionbtn,#bottombar{display:flex;}[class~=headerc]{height:60px;}footer,[class~=headerc]{padding-left:.104166667in;}#buttonbar{float:right;}[class~=headerc],footer{padding-bottom:.104166667in;}#vidimg p{font-size:10.5pt;}#actionbtn #playbtn{margin-right:4%;}#vidimg p{font-weight:500;}[class~=headerc] img{float:left;}footer,[class~=headerc]{padding-right:.104166667in;}#vidimg span{font-size:12px;}[class~=headerc],footer{padding-t
+[2025-11-02 10:56:57] [error] [Streaam.net] Error: Could not extract video URL. File may be private or deleted.
+[2025-11-02 10:56:57] [info] [NowPlayToc] Extracting NowPlayToc video: https://nowplaytoc.com/1984895971020115969
+[2025-11-02 10:56:57] [info] [NowPlayToc] Video ID: 1984895971020115969
+[2025-11-02 10:57:13] [debug] [NowPlayToc] Found __NUXT_DATA__ script
+[2025-11-02 10:57:13] [debug] [NowPlayToc] Parsed Nuxt data array
+[2025-11-02 10:57:13] [error] [NowPlayToc] Failed to extract video URL from all methods
+[2025-11-02 10:57:13] [debug] [NowPlayToc] HTML preview (first 1000 chars): <!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body,html{height:100%;margin:0;width:100%}.loader-box{align-items:center;display:flex;height:100vh;justify-content:center;width:100%}.loader{aspect-ratio:1;background:#409eff;border-radius:50%;padding:8px;width:40px;--_m:conic-gradient(#0000 10%,#000),linear-gradient(#000 0 0) content-box;animation:l3 1s linear infinite;-webkit-mask:var(--_m);mask:var(--_m);-webkit-mask-composite:source-out;mask-composite:subtract}@keyframes l3{to{transform:rotate(1turn)}}</style>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Di7pOihq.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Beuuejxh.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bkg_ohyQ.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/D60g5be4.js">
+<link rel="prefetch" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
+<link rel="prefe
+[2025-11-02 10:57:13] [warning] [NowPlayToc] Detected domain migration to nowplaylee.com
+[2025-11-02 10:57:13] [error] [NowPlayToc] Error: NowPlayToc has migrated to a new domain. The video may require additional authentication or the link has expired.
+[2025-11-02 10:57:13] [info] [VividCast] Extracting VividCast video: https://www.vividcastydca.com/#/?linkId=1984866717981085697
+[2025-11-02 10:57:13] [info] [VividCast] Link ID: 1984866717981085697
+[2025-11-02 10:57:44] [error] [VividCast] Failed to extract video URL from all methods
+[2025-11-02 10:57:44] [debug] [VividCast] HTML preview (first 1000 chars): <!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdWFQmXVhUcF1YVJ1dWFSdXVhUcF1YVCYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF1YVAhdWFSfXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT9XVhUn11YVAgAAAAAAAAAAAAAAAAAAAAAAAAAAFxYVAxdWFTJXVhU/11YVP9dWFT/XVhU/11YVP9dWFT7XVhUOF1YVNVdWFTJXFhUDAAAAAAAAAAAAAAAAAAAAABdWFShXVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUrQAAAABcV1QQXVhU5V1YVKEAAAAAAAAAAAAAAABdWFQmXVhU/V1YVP9dWFT/XVhU/11YVP9dWFT/XVhU211YUxYAAAAAAAAAAF1YVMVdWFT9XVhUJgAAAAAAAAAAXVhUbl1YVP9dWFT/XVhU/11YVP9dWFT/XVhU/11YVEIAAAAAAAAAAF1YVEJdWFTvXVhU/11YVG4AAAAAAAAAAF1YVJ1dWFT/XVhU/11YVP9dWFT/XVhU/11YVP9dWFSJXFhUHF1YVGpdWFT/XVhU/11YVP9dWFSdAAAAAAAAAABdWFSdXVhU/11YVP9dWFT/XVhU/11YVNtdWFT3XVhU/11YVP9dWFT/XVhU/11YVP9dWFT/XVhUnQAAAAAAAAAAXVhUcF1YVP9dWFT/XVhU411YVItdWFQyXVhU+
+[2025-11-02 10:57:44] [error] [VividCast] Error: Could not extract video URL. File may be private, deleted, or requires authentication.

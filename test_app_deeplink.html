@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Link Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        button:hover {
+            background: #5568d3;
+        }
+        .log {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 6px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .log-item {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .success { color: #52c41a; }
+        .error { color: #f5222d; }
+        .info { color: #1890ff; }
+    </style>
+</head>
+<body>
+    <h1>?? Deep Linking Test Page</h1>
+    
+    <div class="test-card">
+        <h3>Device Information</h3>
+        <p><strong>User Agent:</strong> <span id="userAgent"></span></p>
+        <p><strong>Platform:</strong> <span id="platform"></span></p>
+        <p><strong>Is Mobile:</strong> <span id="isMobile"></span></p>
+    </div>
+
+    <div class="test-card">
+        <h3>Test Deep Links</h3>
+        <button onclick="testAppOpen('video', 'TEST123')">Test Video Deep Link</button>
+        <button onclick="testAppOpen('download', 'TEST123')">Test Download Deep Link</button>
+        <button onclick="testDirectIntent()">Test Android Intent (Android only)</button>
+        <button onclick="clearLog()">Clear Log</button>
+    </div>
+
+    <div class="test-card">
+        <h3>Console Log</h3>
+        <div id="logContainer" class="log"></div>
+    </div>
+
+    <script>
+        // Display device info
+        document.getElementById('userAgent').textContent = navigator.userAgent;
+        const isAndroid = /Android/i.test(navigator.userAgent);
+        const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+        const isMobile = isAndroid || isIOS;
+        
+        document.getElementById('platform').textContent = isAndroid ? 'Android' : (isIOS ? 'iOS' : 'Desktop/Other');
+        document.getElementById('isMobile').textContent = isMobile ? 'Yes' : 'No';
+
+        // Log function
+        function addLog(message, type = 'info') {
+            const logContainer = document.getElementById('logContainer');
+            const logItem = document.createElement('div');
+            logItem.className = `log-item ${type}`;
+            const timestamp = new Date().toLocaleTimeString();
+            logItem.textContent = `[${timestamp}] ${message}`;
+            logContainer.insertBefore(logItem, logContainer.firstChild);
+        }
+
+        function clearLog() {
+            document.getElementById('logContainer').innerHTML = '';
+            addLog('Log cleared', 'info');
+        }
+
+        // Test deep link function (same logic as redirect.php)
+        function testAppOpen(action, shortCode) {
+            const appUrl = `teraboxurll://${action}/${shortCode}`;
+            const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.teraboxurll.app';
+            const appStoreUrl = 'https://apps.apple.com/app/teraboxurll/id123456789';
+            
+            addLog(`Testing ${action} deep link for: ${shortCode}`, 'info');
+            
+            if (!isMobile) {
+                addLog('Desktop detected - Deep linking is for mobile only', 'error');
+                return;
+            }
+            
+            let appOpened = false;
+            const timeoutDuration = 2500;
+            
+            // Listen for blur event (app opening)
+            const handleBlur = () => {
+                appOpened = true;
+                addLog('? App opened successfully (blur event)', 'success');
+            };
+            
+            // Listen for visibility change
+            const handleVisibilityChange = () => {
+                if (document.hidden) {
+                    appOpened = true;
+                    addLog('? App opened successfully (visibility change)', 'success');
+                }
+            };
+            
+            window.addEventListener('blur', handleBlur, { once: true });
+            document.addEventListener('visibilitychange', handleVisibilityChange, { once: true });
+            
+            if (isAndroid) {
+                const intentUrl = `intent://${action}/${shortCode}#Intent;scheme=teraboxurll;package=com.teraboxurll.app;S.browser_fallback_url=${encodeURIComponent(playStoreUrl)};end`;
+                addLog(`Trying Android Intent URL`, 'info');
+                window.location.href = intentUrl;
+                
+                setTimeout(() => {
+                    if (!appOpened && !document.hidden) {
+                        addLog('Intent URL may not be supported, trying direct scheme', 'info');
+                        window.location.href = appUrl;
+                        
+                        setTimeout(() => {
+                            if (!appOpened && !document.hidden) {
+                                addLog('? App not detected, would redirect to Play Store', 'error');
+                                // Uncomment to actually redirect:
+                                // window.location.href = playStoreUrl;
+                            }
+                        }, 1500);
+                    }
+                }, 500);
+                
+            } else if (isIOS) {
+                addLog('Trying iOS custom scheme', 'info');
+                window.location.href = appUrl;
+                
+                setTimeout(() => {
+                    if (!appOpened && !document.hidden) {
+                        addLog('? App not detected, would redirect to App Store', 'error');
+                        // Uncomment to actually redirect:
+                        // window.location.href = appStoreUrl;
+                    }
+                }, timeoutDuration);
+            }
+            
+            // Cleanup
+            setTimeout(() => {
+                window.removeEventListener('blur', handleBlur);
+                document.removeEventListener('visibilitychange', handleVisibilityChange);
+                addLog('Event listeners cleaned up', 'info');
+            }, timeoutDuration + 1000);
+        }
+
+        // Test Android Intent directly
+        function testDirectIntent() {
+            if (!isAndroid) {
+                addLog('This test is for Android only', 'error');
+                return;
+            }
+            
+            const intentUrl = 'intent://video/TEST123#Intent;scheme=teraboxurll;package=com.teraboxurll.app;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.teraboxurll.app;end';
+            addLog('Opening Android Intent directly', 'info');
+            addLog(`Intent URL: ${intentUrl}`, 'info');
+            window.location.href = intentUrl;
+        }
+
+        // Initial log
+        addLog('Test page loaded successfully', 'success');
+        addLog(`Platform: ${isAndroid ? 'Android' : (isIOS ? 'iOS' : 'Desktop')}`, 'info');
+    </script>
+</body>
+</html>

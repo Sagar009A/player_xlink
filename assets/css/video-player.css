@@ -1,0 +1,26 @@
+/* Custom Video Player Styles */
+.video-js {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.video-js .vjs-big-play-button {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.video-js .vjs-control-bar {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.video-js .vjs-play-progress {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.video-js .vjs-volume-level {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}

@@ -1,0 +1,122 @@
+[03-Nov-2025 12:48:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "APP_STORE_URL" in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php:13
+Stack trace:
+#0 /home/u988479389/domains/teraboxurll.in/public_html/redirect.php(38): require_once()
+#1 {main}
+  thrown in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php on line 13
+[03-Nov-2025 12:48:44 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "APP_STORE_URL" in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php:13
+Stack trace:
+#0 /home/u988479389/domains/teraboxurll.in/public_html/redirect.php(38): require_once()
+#1 {main}
+  thrown in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php on line 13
+[03-Nov-2025 12:48:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "APP_STORE_URL" in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php:13
+Stack trace:
+#0 /home/u988479389/domains/teraboxurll.in/public_html/redirect.php(38): require_once()
+#1 {main}
+  thrown in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php on line 13
+[03-Nov-2025 12:48:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "APP_STORE_URL" in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php:13
+Stack trace:
+#0 /home/u988479389/domains/teraboxurll.in/public_html/redirect.php(38): require_once()
+#1 {main}
+  thrown in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php on line 13
+[03-Nov-2025 12:53:15 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "APP_STORE_URL" in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php:13
+Stack trace:
+#0 /home/u988479389/domains/teraboxurll.in/public_html/redirect.php(37): require_once()
+#1 {main}
+  thrown in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php on line 13
+[03-Nov-2025 12:53:18 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "APP_STORE_URL" in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php:13
+Stack trace:
+#0 /home/u988479389/domains/teraboxurll.in/public_html/redirect.php(37): require_once()
+#1 {main}
+  thrown in /home/u988479389/domains/teraboxurll.in/public_html/config/config.php on line 13
+[03-Nov-2025 12:55:20 UTC] [2025-11-03 12:55:20] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 12:55:20 UTC] [2025-11-03 12:55:20] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 12:56:08 UTC] [2025-11-03 12:56:08] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 12:56:08 UTC] [2025-11-03 12:56:08] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 13:41:14 UTC] [2025-11-03 13:41:14] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 13:41:14 UTC] [2025-11-03 13:41:14] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 13:41:14 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[03-Nov-2025 13:41:15 UTC] [2025-11-03 13:41:15] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 13:41:15 UTC] [2025-11-03 13:41:15] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 13:41:17 UTC] [2025-11-03 13:41:17] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 13:41:17 UTC] [2025-11-03 13:41:17] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 13:45:07 UTC] [2025-11-03 13:45:07] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 13:45:07 UTC] [2025-11-03 13:45:07] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 14:15:44 UTC] [2025-11-03 14:15:44] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 14:15:44 UTC] [2025-11-03 14:15:44] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 14:16:09 UTC] [2025-11-03 14:16:09] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 14:16:09 UTC] [2025-11-03 14:16:09] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 14:16:36 UTC] [2025-11-03 14:16:36] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 14:16:36 UTC] [2025-11-03 14:16:36] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 16:01:43 UTC] [2025-11-03 16:01:43] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 16:01:43 UTC] [2025-11-03 16:01:43] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 16:01:43 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[03-Nov-2025 16:06:56 UTC] [2025-11-03 16:06:56] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 16:06:56 UTC] [2025-11-03 16:06:56] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 16:07:14 UTC] [2025-11-03 16:07:14] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 16:07:14 UTC] [2025-11-03 16:07:14] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 16:25:34 UTC] [2025-11-03 16:25:34] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 16:25:34 UTC] [2025-11-03 16:25:34] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 18:17:25 UTC] [2025-11-03 18:17:25] REDIRECT DEBUG: Processing short code: wU5DGYiY
+[03-Nov-2025 18:17:25 UTC] [2025-11-03 18:17:25] REDIRECT DEBUG: Link found: Sintel.mp4
+[03-Nov-2025 18:17:25 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[06-Nov-2025 09:59:30 UTC] [2025-11-06 09:59:30] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 09:59:30 UTC] [2025-11-06 09:59:30] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:00:43 UTC] [2025-11-06 10:00:43] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 10:00:43 UTC] [2025-11-06 10:00:43] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:01:10 UTC] [2025-11-06 10:01:10] REDIRECT DEBUG: Processing short code: TTeaTqim
+[06-Nov-2025 10:01:10 UTC] [2025-11-06 10:01:10] REDIRECT DEBUG: Link found: 2023-06-03-17-26-27.mp4
+[06-Nov-2025 10:26:50 UTC] [2025-11-06 10:26:50] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 10:26:50 UTC] [2025-11-06 10:26:50] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:27:28 UTC] [2025-11-06 10:27:28] REDIRECT DEBUG: Processing short code: TTeaTqim
+[06-Nov-2025 10:27:28 UTC] [2025-11-06 10:27:28] REDIRECT DEBUG: Link found: 2023-06-03-17-26-27.mp4
+[06-Nov-2025 10:27:29 UTC] [2025-11-06 10:27:29] REDIRECT DEBUG: Processing short code: TTeaTqim
+[06-Nov-2025 10:27:29 UTC] [2025-11-06 10:27:29] REDIRECT DEBUG: Link found: 2023-06-03-17-26-27.mp4
+[06-Nov-2025 10:27:59 UTC] [2025-11-06 10:27:59] REDIRECT DEBUG: Processing short code: TTeaTqim
+[06-Nov-2025 10:27:59 UTC] [2025-11-06 10:27:59] REDIRECT DEBUG: Link found: 2023-06-03-17-26-27.mp4
+[06-Nov-2025 10:28:19 UTC] [2025-11-06 10:28:19] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 10:28:19 UTC] [2025-11-06 10:28:19] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:29:49 UTC] [2025-11-06 10:29:49] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 10:29:49 UTC] [2025-11-06 10:29:49] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:30:44 UTC] [2025-11-06 10:30:44] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 10:30:44 UTC] [2025-11-06 10:30:44] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:35:17 UTC] [2025-11-06 10:35:17] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 10:35:17 UTC] [2025-11-06 10:35:17] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:35:17 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[06-Nov-2025 10:36:14 UTC] [2025-11-06 10:36:14] REDIRECT DEBUG: Processing short code: TTeaTqim
+[06-Nov-2025 10:36:14 UTC] [2025-11-06 10:36:14] REDIRECT DEBUG: Link found: 2023-06-03-17-26-27.mp4
+[06-Nov-2025 10:36:14 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[06-Nov-2025 10:44:43 UTC] [2025-11-06 10:44:43] REDIRECT DEBUG: Processing short code: TTeaTqim
+[06-Nov-2025 10:44:43 UTC] [2025-11-06 10:44:43] REDIRECT DEBUG: Link found: 2023-06-03-17-26-27.mp4
+[06-Nov-2025 10:47:42 UTC] [2025-11-06 10:47:42] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 10:47:42 UTC] [2025-11-06 10:47:42] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:48:15 UTC] [2025-11-06 10:48:15] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 10:48:15 UTC] [2025-11-06 10:48:15] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:53:15 UTC] [2025-11-06 10:53:15] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 10:53:15 UTC] [2025-11-06 10:53:15] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 10:53:54 UTC] [2025-11-06 10:53:54] REDIRECT DEBUG: Processing short code: YMQu95Nr
+[06-Nov-2025 10:53:54 UTC] [2025-11-06 10:53:54] REDIRECT DEBUG: Link found: Insta Srch ( Fun.Bross ) Post 402.mp4
+[06-Nov-2025 10:53:54 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[06-Nov-2025 11:21:58 UTC] [2025-11-06 11:21:58] REDIRECT DEBUG: Processing short code: JtT5PhPW
+[06-Nov-2025 11:21:58 UTC] [2025-11-06 11:21:58] REDIRECT DEBUG: Link found: 2024-02-28-22-11-39(1)(480P version).mov
+[06-Nov-2025 11:21:58 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[06-Nov-2025 11:23:23 UTC] [2025-11-06 11:23:23] REDIRECT DEBUG: Processing short code: JtT5PhPW
+[06-Nov-2025 11:23:23 UTC] [2025-11-06 11:23:23] REDIRECT DEBUG: Link found: 2024-02-28-22-11-39(1)(480P version).mov
+[06-Nov-2025 11:23:25 UTC] [2025-11-06 11:23:25] REDIRECT DEBUG: Processing short code: JtT5PhPW
+[06-Nov-2025 11:23:25 UTC] [2025-11-06 11:23:25] REDIRECT DEBUG: Link found: 2024-02-28-22-11-39(1)(480P version).mov
+[06-Nov-2025 11:35:26 UTC] [2025-11-06 11:35:26] REDIRECT DEBUG: Processing short code: JtT5PhPW
+[06-Nov-2025 11:35:26 UTC] [2025-11-06 11:35:26] REDIRECT DEBUG: Link found: 2024-02-28-22-11-39(1)(480P version).mov
+[06-Nov-2025 11:49:38 UTC] [2025-11-06 11:49:38] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 11:49:38 UTC] [2025-11-06 11:49:38] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 11:49:38 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[06-Nov-2025 12:16:22 UTC] [2025-11-06 12:16:22] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 12:16:22 UTC] [2025-11-06 12:16:22] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 12:16:22 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[06-Nov-2025 12:17:37 UTC] [2025-11-06 12:17:37] REDIRECT DEBUG: Processing short code: YMQu95Nr
+[06-Nov-2025 12:17:37 UTC] [2025-11-06 12:17:37] REDIRECT DEBUG: Link found: Insta Srch ( Fun.Bross ) Post 402.mp4
+[06-Nov-2025 12:17:37 UTC] Error logging view: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'today_views' in 'SET'
+[06-Nov-2025 12:24:10 UTC] [2025-11-06 12:24:10] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 12:24:10 UTC] [2025-11-06 12:24:10] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 13:03:00 UTC] [2025-11-06 13:03:00] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 13:03:00 UTC] [2025-11-06 13:03:00] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4
+[06-Nov-2025 15:46:09 UTC] [2025-11-06 15:46:09] REDIRECT DEBUG: Processing short code: f5ahnnRU
+[06-Nov-2025 15:46:09 UTC] [2025-11-06 15:46:09] REDIRECT DEBUG: Link found: 2023-02-23-22-57-47.mp4

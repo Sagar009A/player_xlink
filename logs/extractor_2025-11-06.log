@@ -1,0 +1,90 @@
+[2025-11-06 08:01:57] [info] [TeraBox] Extracting TeraBox video - shortcode: 1sYlhQRHA8g1Wfq2u4XlSIg
+[2025-11-06 08:01:57] [info] [TeraBox] Using database cached token
+[2025-11-06 08:01:57] [info] [TeraBox] Fetching video info for shortcode: 1sYlhQRHA8g1Wfq2u4XlSIg
+[2025-11-06 08:01:59] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-06 08:01:59] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-06 08:01:59] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-06 08:02:06] [info] [TeraBox] Extracting TeraBox video - shortcode: 1sYlhQRHA8g1Wfq2u4XlSIg
+[2025-11-06 08:02:06] [info] [TeraBox] Using database cached token
+[2025-11-06 08:02:06] [info] [TeraBox] Fetching video info for shortcode: 1sYlhQRHA8g1Wfq2u4XlSIg
+[2025-11-06 08:02:07] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-06 08:02:07] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-06 08:02:07] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-06 09:26:10] [info] [TeraBox] Extracting TeraBox video - shortcode: 1r2W5Bx0T8tTAJ9o58B7OPg
+[2025-11-06 09:26:10] [info] [TeraBox] Using database cached token
+[2025-11-06 09:26:10] [info] [TeraBox] Fetching video info for shortcode: 1r2W5Bx0T8tTAJ9o58B7OPg
+[2025-11-06 09:26:11] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-06 09:26:11] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-06 09:26:11] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-06 09:26:15] [info] [TeraBox] Extracting TeraBox video - shortcode: 1r2W5Bx0T8tTAJ9o58B7OPg
+[2025-11-06 09:26:15] [info] [TeraBox] Using database cached token
+[2025-11-06 09:26:15] [info] [TeraBox] Fetching video info for shortcode: 1r2W5Bx0T8tTAJ9o58B7OPg
+[2025-11-06 09:26:16] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-06 09:26:16] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-06 09:26:16] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-06 09:26:21] [info] [TeraBox] Extracting TeraBox video - shortcode: 1r2W5Bx0T8tTAJ9o58B7OPg
+[2025-11-06 09:26:21] [info] [TeraBox] Using database cached token
+[2025-11-06 09:26:21] [info] [TeraBox] Fetching video info for shortcode: 1r2W5Bx0T8tTAJ9o58B7OPg
+[2025-11-06 09:26:23] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-06 09:26:23] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-06 09:26:23] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-06 10:53:29] [info] [TeraBox] Extracting TeraBox video - shortcode: 1__Gi0RMuOgY1GtFejpaTig
+[2025-11-06 10:53:29] [info] [TeraBox] Using database cached token
+[2025-11-06 10:53:29] [info] [TeraBox] Fetching video info for shortcode: 1__Gi0RMuOgY1GtFejpaTig
+[2025-11-06 10:53:30] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-06 10:53:30] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-06 10:53:30] [info] [TeraBox] Waiting 3.31 seconds before retry attempt 1...
+[2025-11-06 10:53:34] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-06 10:53:34] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-06 10:53:34] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-06 10:53:45] [info] [TeraBox] Extracting TeraBox video - shortcode: 1__Gi0RMuOgY1GtFejpaTig
+[2025-11-06 10:53:45] [info] [TeraBox] Using database cached token
+[2025-11-06 10:53:45] [info] [TeraBox] Fetching video info for shortcode: 1__Gi0RMuOgY1GtFejpaTig
+[2025-11-06 10:53:45] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-06 10:53:45] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-06 10:53:45] [info] [TeraBox] Waiting 3.06 seconds before retry attempt 1...
+[2025-11-06 10:53:49] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-06 10:53:49] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-06 10:53:49] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-06 11:09:35] [info] [TeraBox] Extracting TeraBox video - shortcode: 1oAxQ_HGVC1zkj_1qJAsc9g
+[2025-11-06 11:09:35] [info] [TeraBox] Using database cached token
+[2025-11-06 11:09:35] [info] [TeraBox] Fetching video info for shortcode: 1oAxQ_HGVC1zkj_1qJAsc9g
+[2025-11-06 11:09:36] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-06 11:09:36] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-06 11:09:36] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-06 11:20:53] [info] [TeraBox] Extracting TeraBox video - shortcode: 16xFACaMh5s1RkAklx5vJcg
+[2025-11-06 11:20:53] [info] [TeraBox] Using database cached token
+[2025-11-06 11:20:53] [info] [TeraBox] Fetching video info for shortcode: 16xFACaMh5s1RkAklx5vJcg
+[2025-11-06 11:20:54] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-06 11:20:54] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-06 11:20:54] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-06 11:21:00] [info] [TeraBox] Extracting TeraBox video - shortcode: 16xFACaMh5s1RkAklx5vJcg
+[2025-11-06 11:21:00] [info] [TeraBox] Using database cached token
+[2025-11-06 11:21:00] [info] [TeraBox] Fetching video info for shortcode: 16xFACaMh5s1RkAklx5vJcg
+[2025-11-06 11:21:00] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-06 11:21:00] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-06 11:21:00] [info] [TeraBox] Waiting 3.34 seconds before retry attempt 1...
+[2025-11-06 11:21:04] [warning] [TeraBox] cURL error (attempt 2/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-06 11:21:04] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-06 11:21:04] [info] [TeraBox] Waiting 6.14 seconds before retry attempt 2...
+[2025-11-06 11:21:10] [warning] [TeraBox] cURL error (attempt 3/4): [35] error:0A00042E:SSL routines::tlsv1 alert protocol version
+[2025-11-06 11:21:10] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-06 11:21:10] [info] [TeraBox] Waiting 12.69 seconds before retry attempt 3...
+[2025-11-06 11:21:23] [warning] [TeraBox] cURL error (attempt 4/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-06 11:21:23] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-06 11:21:23] [error] [TeraBox] Failed after 4 attempts: OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-06 11:21:31] [info] [TeraBox] Extracting TeraBox video - shortcode: 16xFACaMh5s1RkAklx5vJcg
+[2025-11-06 11:21:31] [info] [TeraBox] Using database cached token
+[2025-11-06 11:21:31] [info] [TeraBox] Fetching video info for shortcode: 16xFACaMh5s1RkAklx5vJcg
+[2025-11-06 11:21:32] [warning] [TeraBox] cURL error (attempt 1/4): [35] OpenSSL SSL_connect: Connection reset by peer in connection to www.terabox.com:443 
+[2025-11-06 11:21:32] [info] [TeraBox] SSL/Connection issue detected, rotating user-agent and retrying...
+[2025-11-06 11:21:32] [info] [TeraBox] Waiting 3.93 seconds before retry attempt 1...
+[2025-11-06 11:21:36] [info] [TeraBox] Successfully connected to TeraBox API (attempt 2)
+[2025-11-06 11:21:36] [error] [TeraBox] API returned error: errno=400141, message=need verify
+[2025-11-06 11:21:36] [warning] [TeraBox] TeraBox CAPTCHA verification required - Rate limit detected
+[2025-11-06 11:21:52] [info] [TeraBox] Extracting TeraBox video - shortcode: 16xFACaMh5s1RkAklx5vJcg
+[2025-11-06 11:21:52] [info] [TeraBox] Using database cached token
+[2025-11-06 11:21:52] [info] [TeraBox] Fetching video info for shortcode: 16xFACaMh5s1RkAklx5vJcg
+[2025-11-06 11:21:54] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-06 11:21:54] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-06 11:21:54] [error] [TeraBox] fetchVideoInfo returned null - no video data found

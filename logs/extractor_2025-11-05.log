@@ -1,0 +1,12 @@
+[2025-11-05 13:53:35] [info] [TeraBox] Extracting TeraBox video - shortcode: 1K3iNu2DlUM-GldkK2BKa-g
+[2025-11-05 13:53:35] [info] [TeraBox] Using database cached token
+[2025-11-05 13:53:35] [info] [TeraBox] Fetching video info for shortcode: 1K3iNu2DlUM-GldkK2BKa-g
+[2025-11-05 13:53:37] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-05 13:53:37] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-05 13:53:37] [error] [TeraBox] fetchVideoInfo returned null - no video data found
+[2025-11-05 13:53:42] [info] [TeraBox] Extracting TeraBox video - shortcode: 1K3iNu2DlUM-GldkK2BKa-g
+[2025-11-05 13:53:42] [info] [TeraBox] Using database cached token
+[2025-11-05 13:53:42] [info] [TeraBox] Fetching video info for shortcode: 1K3iNu2DlUM-GldkK2BKa-g
+[2025-11-05 13:53:43] [info] [TeraBox] Successfully connected to TeraBox API (attempt 1)
+[2025-11-05 13:53:43] [error] [TeraBox] No direct link (dlink) found in file data
+[2025-11-05 13:53:43] [error] [TeraBox] fetchVideoInfo returned null - no video data found
