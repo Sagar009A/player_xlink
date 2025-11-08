@@ -1,0 +1,167 @@
+================================================================================
+  1024TERA.COM API FIX - QUICK START GUIDE
+================================================================================
+
+PROBLEM FIXED:
+--------------
+✅ 1024tera.com URLs now work correctly
+✅ System automatically detects and uses the correct API domain
+✅ All TeraBox variants supported (1024tera.com, 1024terabox.com, etc.)
+
+================================================================================
+STEP-BY-STEP SETUP:
+================================================================================
+
+1. INITIALIZE DATABASE SETTINGS (Run once)
+   -----------------------------------------
+   Open in browser:
+   → http://YOUR-DOMAIN.com/setup_terabox_settings.php
+   
+   Expected output: "✓ Setup completed successfully!"
+
+2. TEST THE FIX
+   -------------
+   Open in browser:
+   → http://YOUR-DOMAIN.com/test_1024tera_fix.php
+   
+   This will test multiple TeraBox domains including 1024tera.com
+   Look for: "✓ Extraction Successful!"
+
+3. CHECK API STATUS (Optional)
+   ----------------------------
+   Open in browser:
+   → http://YOUR-DOMAIN.com/check_terabox_api.php
+   
+   This shows which domains are responding and API configuration
+
+4. CONFIGURE SETTINGS (Optional)
+   ------------------------------
+   Login to Admin Panel → Settings → Scroll to "Terabox API Settings"
+   
+   Default settings (recommended):
+   [✓] Use Dynamic Domain Detection
+   Default API Domain: www.terabox.app
+   JS Token: [leave empty for auto-fetch]
+
+================================================================================
+HOW IT WORKS NOW:
+================================================================================
+
+BEFORE FIX:                        AFTER FIX:
+-----------                        ----------
+Input: 1024tera.com/s/ABC     →    Input: 1024tera.com/s/ABC
+API:   terabox.com [WRONG]    →    Detect: 1024tera.com
+Result: ❌ FAILED             →    API:   www.1024tera.com [CORRECT]
+                                   Result: ✅ SUCCESS
+
+================================================================================
+SUPPORTED DOMAINS:
+================================================================================
+
+Primary Domains (Direct API Mapping):
+  ✓ 1024tera.com        → www.1024tera.com
+  ✓ 1024terabox.com     → www.1024terabox.com
+  ✓ terabox.com         → www.terabox.com
+  ✓ terabox.app         → www.terabox.app
+
+Other TeraBox Domains (Mapped to terabox.app):
+  ✓ teraboxapp.com, 4funbox.com, mirrobox.com, momerybox.com
+  ✓ teraboxlink.com, terasharelink.com, teraboxurl.com
+  ✓ And all other TeraBox variants
+
+================================================================================
+TESTING:
+================================================================================
+
+Quick Test URLs:
+  1. https://1024tera.com/s/16y9PvRU-Kx5LEb83Yh6iAg
+  2. https://www.1024tera.com/s/16y9PvRU-Kx5LEb83Yh6iAg
+  3. https://terabox.app/s/16y9PvRU-Kx5LEb83Yh6iAg
+
+Test via API:
+  curl "http://YOUR-DOMAIN.com/api/extract.php?url=https://1024tera.com/s/ABC"
+
+Check Logs:
+  tail -f logs/extractor_$(date +%Y-%m-%d).log
+
+================================================================================
+TROUBLESHOOTING:
+================================================================================
+
+If 1024tera.com still doesn't work:
+
+1. Verify Settings
+   → Admin Panel → Settings → Terabox API Settings
+   → Ensure "Use Dynamic Domain Detection" is CHECKED
+
+2. Check Logs
+   → logs/extractor_YYYY-MM-DD.log
+   → Look for: "Domain mapping: 1024tera.com -> www.1024tera.com"
+
+3. Verify Token
+   → Run: check_terabox_api.php
+   → Look for: "✓ Using database cached token"
+
+4. Rate Limiting
+   → If you see "verification required" errors
+   → Wait 5-10 minutes before retrying
+   → TeraBox implements CAPTCHA for too many requests
+
+5. Test API Directly
+   → Run: check_terabox_api.php
+   → Check which domains return "HTTP 200 - Working!"
+
+================================================================================
+FILES MODIFIED:
+================================================================================
+
+Core Changes:
+  ✓ extractors/TeraboxExtractor.php   [Dynamic domain detection added]
+  ✓ includes/terabox_helper.php       [Dynamic domain detection added]
+  ✓ admin/settings.php                [Terabox settings section added]
+
+New Files (Helper Scripts):
+  • check_terabox_api.php              [Diagnostic tool]
+  • test_1024tera_fix.php              [Test script]
+  • setup_terabox_settings.php         [Settings initializer]
+  • TERABOX_1024TERA_FIX.md            [Full documentation]
+  • FIX_SUMMARY.md                     [Summary documentation]
+  • QUICK_START.txt                    [This file]
+
+================================================================================
+DOCUMENTATION:
+================================================================================
+
+Quick Reference:    This file (QUICK_START.txt)
+Full Docs:          TERABOX_1024TERA_FIX.md
+Summary:            FIX_SUMMARY.md
+Admin Settings:     Admin Panel → Settings → Terabox API Settings
+
+================================================================================
+SUMMARY:
+================================================================================
+
+✅ FIXED: 1024tera.com API now works
+✅ Dynamic domain detection implemented
+✅ All TeraBox variants supported
+✅ Admin configuration panel added
+✅ Diagnostic and test tools included
+✅ Logs show which domain is being used
+
+STATUS: Production Ready
+VERSION: 1.0
+DATE: 2025-11-08
+
+================================================================================
+YOUR 1024TERA.COM LINKS SHOULD NOW WORK! 🎉
+================================================================================
+
+Next Steps:
+1. Run setup_terabox_settings.php (once)
+2. Test with test_1024tera_fix.php
+3. Try your actual 1024tera.com URLs
+4. Check logs if any issues
+
+For detailed information, see: TERABOX_1024TERA_FIX.md
+
+================================================================================

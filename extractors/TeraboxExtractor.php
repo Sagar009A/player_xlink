@@ -24,6 +24,7 @@ class TeraboxExtractor extends AbstractExtractor {
     
     protected $platform = 'terabox';
     protected $tokenUrl = 'https://ntmtemp.xyz/token.txt'; // Your token source
+    protected $inputDomain = 'www.terabox.app'; // Store the domain from input URL
     
     public function validateUrl($url) {
         // Comprehensive list of TeraBox domain variants
@@ -71,7 +72,10 @@ class TeraboxExtractor extends AbstractExtractor {
             ];
         }
         
-        $this->log("Extracting TeraBox video - shortcode: $shortCode");
+        // Store the domain from input URL for API calls
+        $this->setDomainFromUrl($url);
+        
+        $this->log("Extracting TeraBox video - shortcode: $shortCode, domain: {$this->inputDomain}");
         
         // Get token
         $token = $this->fetchToken();
@@ -125,6 +129,39 @@ class TeraboxExtractor extends AbstractExtractor {
             'message' => 'Video extracted successfully',
             'data' => $videoInfo
         ];
+    }
+    
+    /**
+     * Set the domain from input URL to use for API calls
+     */
+    private function setDomainFromUrl($url) {
+        $host = parse_url($url, PHP_URL_HOST);
+        if ($host) {
+            // Remove www. prefix if present
+            $host = str_replace('www.', '', $host);
+            
+            // Map domains to their API-compatible versions
+            $domainMap = [
+                '1024tera.com' => 'www.1024tera.com',
+                '1024terabox.com' => 'www.1024terabox.com',
+                'terabox.com' => 'www.terabox.com',
+                'terabox.app' => 'www.terabox.app',
+                'teraboxapp.com' => 'www.terabox.app',
+                '4funbox.com' => 'www.terabox.app',
+                'mirrobox.com' => 'www.terabox.app',
+                'momerybox.com' => 'www.terabox.app',
+                'teraboxlink.com' => 'www.terabox.app',
+                'terasharelink.com' => 'www.terabox.app',
+                'teraboxurl.com' => 'www.terabox.app',
+                'teraboxurl1.com' => 'www.terabox.app',
+                'terasharefile.com' => 'www.terabox.app',
+                'terafileshare.com' => 'www.terabox.app'
+            ];
+            
+            // Use mapped domain or default to terabox.app
+            $this->inputDomain = $domainMap[$host] ?? 'www.terabox.app';
+            $this->log("Domain mapping: $host -> {$this->inputDomain}", 'info');
+        }
     }
     
     /**
@@ -239,7 +276,9 @@ class TeraboxExtractor extends AbstractExtractor {
     private function fetchVideoInfo($shortCode, $token) {
         $this->log("Fetching video info for shortcode: $shortCode");
         
-        $apiUrl = "https://www.terabox.com/api/shorturlinfo?" . http_build_query([
+        // Use the domain from input URL for API call
+        $apiDomain = $this->inputDomain;
+        $apiUrl = "https://{$apiDomain}/api/shorturlinfo?" . http_build_query([
             "app_id" => "250528",
             "web" => "1",
             "channel" => "dubox",
@@ -260,14 +299,17 @@ class TeraboxExtractor extends AbstractExtractor {
             // Rotate user-agent on each attempt to avoid detection
             $userAgent = $this->getRandomUserAgent();
             
+            // Use dynamic domain for Host and Referer headers
+            $apiDomain = $this->inputDomain;
+            
             $headers = [
-                "Host: www.terabox.app",
+                "Host: {$apiDomain}",
                 "Cookie: browserid=ArBvk6M0xQdGymnG39wFu9_Y-XtkB-PAYReRtXIrWSYDC1MdrwIFqWZXhpc=; TSID=NtYlMiAJGEoeW5WueA2nJVkgsJFqpVK7; __bid_n=197358ca9d98712cf34207; _ga=GA1.1.1172885542.1748950101; lang=en; ndus=Y4AThvEteHui_dpx27xN7s-lZY8wOepXzeyaN_IA; csrfToken=NmlcKtX7UofCC7LAP00cMkEd; ndut_fmt=D56A2DB8F8F88F74D931798D21655E28E1E1EB08FD1A235AF4D5B52847390EE1; ndut_fmv=b37a866305518c23d8fe102c9805c5fc32e463ee7434cc89a239b701e9c67ff9683d177535da5ab734d1fdcc6d1ee790539eb63a954c0db4797a0216c389d3ee5e3c8b4ed66c88e193ffc5218175d9e4037c379b7fc7b010a85cc38cbc87dce1c2d75811cedc9080864cf1dd671668f9; _ga_06ZNKL8C2E=GS2.1.s1753013452\$o9\$g0\$t1753013452\$j60\$l0\$h0",
                 "X-Requested-With: XMLHttpRequest",
                 "User-Agent: $userAgent",
                 "Accept: application/json, text/plain, */*",
                 "Content-Type: application/x-www-form-urlencoded",
-                "Referer: https://www.terabox.app/sharing/link?surl=" . $shortCode,
+                "Referer: https://{$apiDomain}/sharing/link?surl=" . $shortCode,
                 "Accept-Encoding: gzip, deflate, br",
                 "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8",
                 "Connection: keep-alive",
