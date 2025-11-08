@@ -98,8 +98,10 @@ function generateShortCode($pdo) {
     $maxAttempts = 10;
     
     for ($i = 0; $i < $maxAttempts; $i++) {
+        // Generate random length between 22-26
+        $length = rand(22, 26);
         $shortCode = '';
-        for ($j = 0; $j < 8; $j++) {
+        for ($j = 0; $j < $length; $j++) {
             $shortCode .= $characters[rand(0, strlen($characters) - 1)];
         }
         

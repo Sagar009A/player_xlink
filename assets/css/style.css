@@ -1,16 +1,16 @@
 :root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
+    --primary-color: #ff3b30;
+    --secondary-color: #ff6347;
     --success-color: #2ecc71;
     --danger-color: #e74c3c;
     --warning-color: #f39c12;
-    --info-color: #667eea;
-    --dark-color: #2c3e50;
-    --light-color: #ecf0f1;
-    --bg-color: #ffffff;
-    --text-color: #2c3e50;
-    --border-color: #dfe6e9;
-    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --info-color: #ff5722;
+    --dark-color: #0a0a0a;
+    --light-color: #1a1a1a;
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --border-color: #2d2d2d;
+    --shadow: 0 2px 10px rgba(255,59,48,0.2);
 }
 
 * {
@@ -89,7 +89,7 @@ body {
 }
 
 .bg-gradient-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff3b30 0%, #ff6347 100%);
 }
 
 .bg-gradient-success {
@@ -181,7 +181,7 @@ body {
 }
 
 .table-hover tbody tr:hover {
-    background-color: rgba(52, 152, 219, 0.1);
+    background-color: rgba(255, 59, 48, 0.1);
 }
 
 /* Sidebar */
@@ -266,7 +266,7 @@ body {
 
 .feature-box i {
     font-size: 3rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff3b30 0%, #ff6347 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -275,7 +275,7 @@ body {
 
 /* Loading Spinner */
 .spinner {
-    border: 4px solid rgba(0,0,0,0.1);
+    border: 4px solid rgba(255,255,255,0.1);
     border-left-color: var(--primary-color);
     border-radius: 50%;
     width: 40px;
@@ -303,7 +303,7 @@ body {
 
 /* Code Blocks */
 code {
-    background: rgba(102, 126, 234, 0.1);
+    background: rgba(255, 59, 48, 0.2);
     padding: 3px 8px;
     border-radius: 5px;
     color: var(--primary-color);
