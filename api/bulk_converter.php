@@ -168,8 +168,10 @@ if (empty($urls) || !is_array($urls)) {
     exit;
 }
 
-// Limit URLs per request
-$maxUrls = 100;
+// Limit URLs per request (20 for bot, 100 for web)
+$isBotRequest = isset($_SERVER['HTTP_USER_AGENT']) && strpos($_SERVER['HTTP_USER_AGENT'], 'TelegramBot') !== false;
+$maxUrls = $isBotRequest ? 20 : 100;
+
 if (count($urls) > $maxUrls) {
     http_response_code(400);
     echo json_encode([

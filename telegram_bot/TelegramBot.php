@@ -165,10 +165,11 @@ class TelegramBot {
         
         if ($hasApiKey) {
             $response .= "✅ Your API key is already configured.\n\n";
-            $response .= "📤 <b>How to convert posts:</b>\n";
-            $response .= "1. Send me a photo/video with caption\n";
-            $response .= "2. Include a supported link in caption\n";
-            $response .= "3. Bot will convert and reply!\n\n";
+            $response .= "📤 <b>How to convert links:</b>\n";
+            $response .= "• <b>Single:</b> Send 1 link for instant conversion\n";
+            $response .= "• <b>Bulk:</b> Send up to 20 links at once!\n";
+            $response .= "• I'll fetch video titles automatically\n";
+            $response .= "• Live progress tracking included\n\n";
         } else {
             $response .= "🔑 <b>To get started:</b>\n";
             $response .= "1. Visit " . SITE_URL . "\n";
@@ -405,10 +406,12 @@ class TelegramBot {
         $response .= "/profile - View your profile information\n";
         $response .= "/help - Show this help message\n\n";
         
-        $response .= "🔗 <b>Post Conversion:</b>\n";
-        $response .= "1. Send a post with photo/video\n";
-        $response .= "2. Add caption with supported link\n";
-        $response .= "3. Bot converts and replies with template!\n\n";
+        $response .= "🔗 <b>Link Conversion:</b>\n";
+        $response .= "• <b>Single Link:</b> Send 1 link to convert instantly\n";
+        $response .= "• <b>Bulk Links:</b> Send up to 20 links at once!\n";
+        $response .= "• Add caption with supported links\n";
+        $response .= "• Bot fetches video titles automatically\n";
+        $response .= "• Live progress updates during conversion\n\n";
         
         $response .= "📝 <b>Supported Domains:</b>\n";
         if (defined('SUPPORTED_DOMAINS') && is_array(SUPPORTED_DOMAINS)) {
@@ -425,6 +428,8 @@ class TelegramBot {
         $response .= "2. Get your API key from profile\n";
         $response .= "3. Use /setapi to link your account\n";
         $response .= "4. Start converting posts!\n\n";
+        
+        $response .= "💡 <b>Pro Tip:</b> Send multiple links (up to 20) in one message for bulk conversion!\n\n";
         
         $response .= "Need help? Contact: " . BOT_USERNAME;
         
@@ -636,7 +641,7 @@ class TelegramBot {
     }
     
     /**
-     * Handle post conversion (MAIN FUNCTION)
+     * Handle post conversion (MAIN FUNCTION) - Supports bulk conversion
      */
     public function handlePostConversion($chatId, $from, $message) {
         if (!$this->userManager->hasApiKey($from['id'])) {
@@ -672,6 +677,15 @@ class TelegramBot {
             return $this->sendMessage($chatId, $response);
         }
         
+        // Check if multiple links (bulk conversion)
+        $linkCount = count($supportedLinks);
+        
+        if ($linkCount > 1) {
+            // BULK CONVERSION MODE
+            return $this->handleBulkConversion($chatId, $from, $message, $supportedLinks);
+        }
+        
+        // SINGLE LINK CONVERSION
         $originalUrl = $supportedLinks[0];
         
         botLog("Attempting to shorten URL: $originalUrl", 'INFO');
@@ -688,7 +702,7 @@ class TelegramBot {
         }
         
         // Build template
-        $templateHeader = defined('TEMPLATE_HEADER') ? TEMPLATE_HEADER : "👇 𝙁𝙐𝙇𝙇 𝙑𝙄𝘿𝙀𝙊 𝙇𝙄𝙉𝙆 👇 Ad Free";
+        $templateHeader = defined('TEMPLATE_HEADER') ? TEMPLATE_HEADER : "👇 𝙁𝙐𝙻𝙇 𝙑𝙄𝘿𝙀𝙊 𝙇𝙄𝙉𝙆 👇 Ad Free";
         $templateFooter = defined('TEMPLATE_FOOTER') ? TEMPLATE_FOOTER : "HOW TO Watch Video👇\nhttps://t.me/yourchannel";
         
         $templateText = $templateHeader . "\n\n";
@@ -718,6 +732,206 @@ class TelegramBot {
         }
         
         return $this->sendMessage($chatId, $templateText);
+    }
+    
+    /**
+     * Handle bulk link conversion (up to 20 links)
+     */
+    private function handleBulkConversion($chatId, $from, $message, $supportedLinks) {
+        $user = $this->userManager->getUser($from['id']);
+        
+        // Limit to 20 links maximum
+        $maxLinks = 20;
+        if (count($supportedLinks) > $maxLinks) {
+            $supportedLinks = array_slice($supportedLinks, 0, $maxLinks);
+            $limitMsg = "⚠️ <b>Limited to {$maxLinks} links</b>\n\n";
+        } else {
+            $limitMsg = "";
+        }
+        
+        $totalLinks = count($supportedLinks);
+        
+        // Send initial status message
+        $statusMessage = $limitMsg;
+        $statusMessage .= "🔄 <b>Bulk Link Conversion Started</b>\n\n";
+        $statusMessage .= "📊 Total Links: {$totalLinks}\n";
+        $statusMessage .= "⏳ Processing: 0/{$totalLinks}\n";
+        $statusMessage .= "✅ Completed: 0\n";
+        $statusMessage .= "❌ Failed: 0\n\n";
+        $statusMessage .= "Please wait...";
+        
+        $statusMsg = $this->sendMessage($chatId, $statusMessage);
+        $statusMsgId = $statusMsg['result']['message_id'] ?? null;
+        
+        botLog("Starting bulk conversion of {$totalLinks} links for user {$from['id']}", 'INFO');
+        
+        // Process links with progress updates
+        $results = [];
+        $completed = 0;
+        $failed = 0;
+        
+        foreach ($supportedLinks as $index => $url) {
+            $processing = $index + 1;
+            
+            // Update progress every link
+            if ($statusMsgId) {
+                $progressMsg = $limitMsg;
+                $progressMsg .= "🔄 <b>Bulk Link Conversion</b>\n\n";
+                $progressMsg .= "📊 Total Links: {$totalLinks}\n";
+                $progressMsg .= "⏳ Processing: {$processing}/{$totalLinks}\n";
+                $progressMsg .= "✅ Completed: {$completed}\n";
+                $progressMsg .= "❌ Failed: {$failed}\n\n";
+                $progressMsg .= "🔨 Post-processing link #{$processing}...";
+                
+                $this->editMessageText($chatId, $statusMsgId, $progressMsg);
+            }
+            
+            $this->sendChatAction($chatId, 'typing');
+            
+            // Convert link with video title fetching
+            $result = $this->convertLinkWithTitle($url, $user['api_key']);
+            
+            if ($result['success']) {
+                $completed++;
+                $results[] = [
+                    'success' => true,
+                    'original_url' => $url,
+                    'short_url' => $result['short_url'],
+                    'title' => $result['title'] ?? 'Video Link',
+                    'platform' => $result['platform'] ?? null
+                ];
+            } else {
+                $failed++;
+                $results[] = [
+                    'success' => false,
+                    'original_url' => $url,
+                    'error' => $result['error'] ?? 'Unknown error'
+                ];
+            }
+        }
+        
+        // Send final summary
+        $summaryMsg = "✅ <b>Bulk Conversion Completed!</b>\n\n";
+        $summaryMsg .= "📊 <b>Summary:</b>\n";
+        $summaryMsg .= "• Total: {$totalLinks} links\n";
+        $summaryMsg .= "• ✅ Success: {$completed}\n";
+        $summaryMsg .= "• ❌ Failed: {$failed}\n\n";
+        
+        if ($completed > 0) {
+            $summaryMsg .= "🎉 <b>Converted Links:</b>\n\n";
+            
+            $successCount = 0;
+            foreach ($results as $result) {
+                if ($result['success'] && $successCount < 10) { // Show first 10
+                    $successCount++;
+                    $title = $result['title'] ?? 'Link';
+                    $platform = $result['platform'] ? " [{$result['platform']}]" : "";
+                    $summaryMsg .= "#{$successCount}. <b>{$title}</b>{$platform}\n";
+                    $summaryMsg .= "🔗 {$result['short_url']}\n\n";
+                }
+            }
+            
+            if ($completed > 10) {
+                $remaining = $completed - 10;
+                $summaryMsg .= "... and {$remaining} more links\n\n";
+            }
+        }
+        
+        if ($failed > 0) {
+            $summaryMsg .= "❌ <b>Failed Links:</b>\n";
+            $failedCount = 0;
+            foreach ($results as $result) {
+                if (!$result['success'] && $failedCount < 5) {
+                    $failedCount++;
+                    $summaryMsg .= "• " . substr($result['original_url'], 0, 50) . "...\n";
+                }
+            }
+            if ($failed > 5) {
+                $summaryMsg .= "... and " . ($failed - 5) . " more\n";
+            }
+        }
+        
+        // Update final status
+        if ($statusMsgId) {
+            $this->editMessageText($chatId, $statusMsgId, $summaryMsg);
+        } else {
+            $this->sendMessage($chatId, $summaryMsg);
+        }
+        
+        // Log the bulk conversion
+        $this->userManager->logCommand($from['id'], 'bulk_convert', [
+            'total' => $totalLinks,
+            'completed' => $completed,
+            'failed' => $failed
+        ], 'success');
+        
+        return true;
+    }
+    
+    /**
+     * Convert link with video title fetching
+     */
+    private function convertLinkWithTitle($url, $apiKey) {
+        try {
+            $apiUrl = $this->siteApiUrl . 'bot_api.php?action=create';
+            
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $apiUrl);
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
+                'api_key' => $apiKey,
+                'url' => $url,
+                'auto_extract' => 'true'
+            ]));
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+            
+            $response = curl_exec($ch);
+            $error = curl_error($ch);
+            curl_close($ch);
+            
+            if ($error) {
+                botLog("Convert link error: $error", 'ERROR');
+                return [
+                    'success' => false,
+                    'error' => 'Connection error'
+                ];
+            }
+            
+            $result = json_decode($response, true);
+            
+            botLog("Convert API response: " . $response, 'DEBUG');
+            
+            if ($result && isset($result['success']) && $result['success']) {
+                return [
+                    'success' => true,
+                    'short_url' => $result['data']['short_url'] ?? null,
+                    'title' => $result['data']['title'] ?? 'Video Link',
+                    'platform' => $result['data']['video_platform'] ?? null
+                ];
+            }
+            
+            if ($result && isset($result['error'])) {
+                botLog("Convert API error: " . $result['error'], 'ERROR');
+                return [
+                    'success' => false,
+                    'error' => $result['error']
+                ];
+            }
+            
+            return [
+                'success' => false,
+                'error' => 'Unknown error'
+            ];
+            
+        } catch (Exception $e) {
+            botLog("Exception in convertLinkWithTitle: " . $e->getMessage(), 'ERROR');
+            return [
+                'success' => false,
+                'error' => $e->getMessage()
+            ];
+        }
     }
     
     /**
