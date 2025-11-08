@@ -59,6 +59,7 @@ $shortCode = rtrim($shortCode, '/');
 
 debugLog("Processing short code: $shortCode");
 
+// Allow both old (5-20 chars) and new (22-26 chars) short codes for backward compatibility
 if (empty($shortCode) || strlen($shortCode) < 5) {
     debugLog("Invalid short code - redirecting to 404");
     header('Location: /error_404.php');

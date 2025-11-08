@@ -4,8 +4,13 @@ require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../config/currencies.php';
 
 // Generate Short Code
-function generateShortCode($length = 8) {
+function generateShortCode($length = null) {
     global $pdo;
+    
+    // Generate random length between 22-26 if not specified
+    if ($length === null) {
+        $length = rand(22, 26);
+    }
     
     do {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
