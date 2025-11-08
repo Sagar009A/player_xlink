@@ -617,8 +617,14 @@ class TelegramBot {
             
             $result = json_decode($response, true);
             
+            botLog("Shorten API response: " . $response, 'DEBUG');
+            
             if ($result && isset($result['success']) && $result['success']) {
                 return $result['short_url'] ?? ($result['shortUrl'] ?? null);
+            }
+            
+            if ($result && isset($result['error'])) {
+                botLog("Shorten API error: " . $result['error'], 'ERROR');
             }
             
             return null;
@@ -667,10 +673,18 @@ class TelegramBot {
         }
         
         $originalUrl = $supportedLinks[0];
+        
+        botLog("Attempting to shorten URL: $originalUrl", 'INFO');
         $shortUrl = $this->shortenUrl($originalUrl, $user['api_key']);
         
         if (!$shortUrl) {
-            return $this->sendMessage($chatId, "❌ Failed to convert link. Please try again.");
+            botLog("Failed to shorten URL for user {$from['id']}", 'ERROR');
+            $response = "❌ <b>Failed to convert link</b>\n\n";
+            $response .= "Please try again in a moment. If the problem persists:\n";
+            $response .= "• Check your API key is valid\n";
+            $response .= "• Make sure your account is approved\n";
+            $response .= "• Contact support if issue continues";
+            return $this->sendMessage($chatId, $response);
         }
         
         // Build template

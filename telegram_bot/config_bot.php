@@ -99,7 +99,7 @@ define('TEMPLATE_FOOTER', "HOW TO Watch Video👇\nhttps://t.me/+h-NgAiLJT5U4YTd
 define('BOT_LOG_FILE', __DIR__ . '/logs/bot.log');
 
 // Log level: DEBUG, INFO, ERROR
-define('BOT_LOG_LEVEL', 'INFO');
+define('BOT_LOG_LEVEL', 'DEBUG');
 
 // Enable/disable logging
 define('BOT_LOGGING_ENABLED', true);
