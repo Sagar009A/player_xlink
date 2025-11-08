@@ -58,6 +58,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_settings'])) {
             updateSetting('api_rate_limit', intval($_POST['api_rate_limit']));
         }
         
+        // Terabox API Settings
+        if (isset($_POST['terabox_api_domain'])) {
+            updateSetting('terabox_api_domain', sanitizeInput($_POST['terabox_api_domain']));
+        }
+        if (isset($_POST['terabox_js_token'])) {
+            $token = trim($_POST['terabox_js_token']);
+            if (!empty($token)) {
+                updateSetting('terabox_js_token', $token);
+            }
+        }
+        updateSetting('terabox_use_dynamic_domain', isset($_POST['terabox_use_dynamic_domain']) ? '1' : '0');
+        
         $success = 'Settings updated successfully!';
         
     } catch (Exception $e) {
@@ -259,6 +271,62 @@ include 'header.php';
                             <input type="number" class="form-control" name="api_rate_limit" 
                                    value="<?= htmlspecialchars(getSettingValue('api_rate_limit', '100')) ?>">
                             <small class="text-muted">Maximum API calls per user per minute</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terabox API Settings -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="fas fa-box"></i> Terabox API Settings</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" name="terabox_use_dynamic_domain" 
+                                   id="terabox_use_dynamic_domain" value="1" 
+                                   <?= getSettingValue('terabox_use_dynamic_domain', '1') == '1' ? 'checked' : '' ?>>
+                            <label class="form-check-label" for="terabox_use_dynamic_domain">
+                                <strong>Use Dynamic Domain Detection</strong><br>
+                                <small class="text-muted">Automatically detect and use the correct API domain for each TeraBox URL (1024tera.com, terabox.app, etc.)</small>
+                            </label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Default Terabox API Domain</label>
+                            <select class="form-select" name="terabox_api_domain">
+                                <option value="www.terabox.app" <?= getSettingValue('terabox_api_domain', 'www.terabox.app') == 'www.terabox.app' ? 'selected' : '' ?>>www.terabox.app</option>
+                                <option value="www.terabox.com" <?= getSettingValue('terabox_api_domain', 'www.terabox.app') == 'www.terabox.com' ? 'selected' : '' ?>>www.terabox.com</option>
+                                <option value="www.1024tera.com" <?= getSettingValue('terabox_api_domain', 'www.terabox.app') == 'www.1024tera.com' ? 'selected' : '' ?>>www.1024tera.com</option>
+                                <option value="www.1024terabox.com" <?= getSettingValue('terabox_api_domain', 'www.terabox.app') == 'www.1024terabox.com' ? 'selected' : '' ?>>www.1024terabox.com</option>
+                            </select>
+                            <small class="text-muted">Fallback API domain when dynamic detection is disabled</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Terabox JS Token (Optional Override)</label>
+                            <textarea class="form-control font-monospace" name="terabox_js_token" rows="3" 
+                                      placeholder="Leave empty to use auto-fetched token"><?= htmlspecialchars(getSettingValue('terabox_js_token', '')) ?></textarea>
+                            <small class="text-muted">
+                                Current token: <?php 
+                                    $token = getSettingValue('terabox_js_token', '');
+                                    if (!empty($token)) {
+                                        echo '<span class="text-success">✓ Set (' . substr($token, 0, 20) . '...)</span>';
+                                    } else {
+                                        echo '<span class="text-warning">Using auto-fetched token</span>';
+                                    }
+                                ?><br>
+                                The system automatically fetches and caches tokens. Only override if needed.
+                            </small>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i> <strong>About Terabox Domains:</strong><br>
+                            • <strong>terabox.app</strong> - Primary official domain (recommended)<br>
+                            • <strong>terabox.com</strong> - Alternative official domain<br>
+                            • <strong>1024tera.com</strong> - Mirror/alternative domain<br>
+                            • <strong>1024terabox.com</strong> - Mirror/alternative domain<br>
+                            <br>
+                            With dynamic domain detection enabled, the system will automatically use the correct API for each URL.
                         </div>
                     </div>
                 </div>

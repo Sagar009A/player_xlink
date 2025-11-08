@@ -15,6 +15,34 @@ function getTeraboxVideoUrl($url) {
         return null;
     }
     
+    // Detect domain from URL for API calls
+    $host = parse_url($url, PHP_URL_HOST);
+    if ($host) {
+        $host = str_replace('www.', '', $host);
+        
+        // Map domains to their API-compatible versions
+        $domainMap = [
+            '1024tera.com' => 'www.1024tera.com',
+            '1024terabox.com' => 'www.1024terabox.com',
+            'terabox.com' => 'www.terabox.com',
+            'terabox.app' => 'www.terabox.app',
+            'teraboxapp.com' => 'www.terabox.app',
+            '4funbox.com' => 'www.terabox.app',
+            'mirrobox.com' => 'www.terabox.app',
+            'momerybox.com' => 'www.terabox.app',
+            'teraboxlink.com' => 'www.terabox.app',
+            'terasharelink.com' => 'www.terabox.app',
+            'teraboxurl.com' => 'www.terabox.app',
+            'teraboxurl1.com' => 'www.terabox.app',
+            'terasharefile.com' => 'www.terabox.app',
+            'terafileshare.com' => 'www.terabox.app'
+        ];
+        
+        $apiDomain = $domainMap[$host] ?? 'www.terabox.app';
+    } else {
+        $apiDomain = 'www.terabox.app';
+    }
+    
     // Get token from database cache (updated by cron)
     global $pdo;
     $token = null;
@@ -50,8 +78,8 @@ function getTeraboxVideoUrl($url) {
         return null;
     }
     
-    // Fetch video info
-    $apiUrl = "https://www.terabox.com/api/shorturlinfo?" . http_build_query([
+    // Fetch video info using detected domain
+    $apiUrl = "https://{$apiDomain}/api/shorturlinfo?" . http_build_query([
         "app_id" => "250528",
         "web" => "1",
         "channel" => "dubox",
@@ -62,8 +90,9 @@ function getTeraboxVideoUrl($url) {
     ]);
     
     $headers = [
+        "Host: {$apiDomain}",
         "Cookie: browserid=ArBvk6M0xQdGymnG39wFu9_Y-XtkB-PAYReRtXIrWSYDC1MdrwIFqWZXhpc=; csrfToken=NmlcKtX7UofCC7LAP00cMkEd;",
-        "Referer: https://www.terabox.app/sharing/link?surl=" . $shortCode
+        "Referer: https://{$apiDomain}/sharing/link?surl=" . $shortCode
     ];
     
     // Enhanced curl options for better connection handling
