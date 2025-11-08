@@ -1,52 +1,35 @@
-// Theme Switcher
-class ThemeSwitcher {
+// Permanent Dark Mode
+// Always apply dark mode - no toggle option
+class DarkModeEnforcer {
     constructor() {
-        this.theme = localStorage.getItem('theme') || 'light';
         this.init();
     }
 
     init() {
-        this.applyTheme(this.theme);
-        this.setupToggleButton();
+        // Force dark mode immediately
+        document.body.classList.add('dark-mode');
+        
+        // Set localStorage to dark
+        localStorage.setItem('theme', 'dark');
+        
+        // Remove any theme toggle buttons if they exist
+        this.removeToggleButtons();
     }
 
-    applyTheme(theme) {
-        if (theme === 'dark') {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
-        this.theme = theme;
-        localStorage.setItem('theme', theme);
-        this.updateToggleButton();
-    }
-
-    toggle() {
-        const newTheme = this.theme === 'light' ? 'dark' : 'light';
-        this.applyTheme(newTheme);
-    }
-
-    setupToggleButton() {
-        const toggleBtn = document.getElementById('themeToggle');
-        if (toggleBtn) {
-            toggleBtn.addEventListener('click', () => this.toggle());
-        }
-    }
-
-    updateToggleButton() {
-        const toggleBtn = document.getElementById('themeToggle');
-        if (toggleBtn) {
-            const icon = toggleBtn.querySelector('.theme-toggle-icon');
-            if (icon) {
-                icon.className = this.theme === 'dark' 
-                    ? 'fas fa-sun theme-toggle-icon' 
-                    : 'fas fa-moon theme-toggle-icon';
+    removeToggleButtons() {
+        const toggleButtons = document.querySelectorAll('#themeToggle, .theme-toggle');
+        toggleButtons.forEach(btn => {
+            if (btn) {
+                btn.style.display = 'none';
             }
-        }
+        });
     }
 }
 
-// Initialize theme switcher
+// Initialize permanent dark mode
 document.addEventListener('DOMContentLoaded', () => {
-    window.themeSwitcher = new ThemeSwitcher();
+    window.darkModeEnforcer = new DarkModeEnforcer();
 });
+
+// Also apply immediately before DOM load
+document.body.classList.add('dark-mode');

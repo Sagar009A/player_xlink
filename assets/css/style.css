@@ -21,10 +21,23 @@
 
 body {
     font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: #000000;
+    color: #ffffff;
     transition: background-color 0.3s ease, color 0.3s ease;
     line-height: 1.6;
+}
+
+/* Permanent Dark Mode - Always Applied */
+body {
+    --bg-color: #000000;
+    --bg-secondary: #0a0a0a;
+    --bg-tertiary: #1a1a1a;
+    --text-color: #ffffff;
+    --text-secondary: #b0b0b0;
+    --border-color: #2d2d2d;
+    --hover-color: #1a1a1a;
+    --shadow: 0 2px 10px rgba(255, 59, 48, 0.3);
+    --shadow-hover: 0 5px 20px rgba(255, 59, 48, 0.5);
 }
 
 /* Navbar */
@@ -538,94 +551,114 @@ section {
     box-shadow: var(--shadow);
 }
 assets/css/dark-mode.css
-/* Dark Mode Styles */
-body.dark-mode {
-    --bg-color: #1a1a2e;
-    --text-color: #eaeaea;
-    --border-color: #2d3748;
-    --shadow: 0 2px 10px rgba(0,0,0,0.5);
-}
-
-body.dark-mode .card {
-    background-color: #16213e;
-    border-color: var(--border-color);
-}
-
-body.dark-mode .form-control {
-    background-color: #0f3460;
+/* Permanent Dark Mode Styles - Applied to All Elements */
+.card {
+    background-color: var(--bg-secondary);
     border-color: var(--border-color);
     color: var(--text-color);
 }
 
-body.dark-mode .form-control:focus {
-    background-color: #0f3460;
-    color: var(--text-color);
-}
-
-body.dark-mode .table {
-    color: var(--text-color);
-}
-
-body.dark-mode .table thead {
-    background: linear-gradient(135deg, #0f3460, #16213e);
-}
-
-body.dark-mode .table-hover tbody tr:hover {
-    background-color: rgba(52, 152, 219, 0.2);
-}
-
-body.dark-mode .sidebar {
-    background-color: #16213e;
-    border-color: var(--border-color);
-}
-
-body.dark-mode .modal-content {
-    background-color: #16213e;
-    color: var(--text-color);
-}
-
-body.dark-mode code {
-    background-color: rgba(52, 152, 219, 0.2);
-}
-
-body.dark-mode .alert {
-    background-color: #0f3460;
-    color: var(--text-color);
-}
-
-body.dark-mode .dropdown-menu {
-    background-color: #16213e;
-    border-color: var(--border-color);
-}
-
-body.dark-mode .dropdown-item {
-    color: var(--text-color);
-}
-
-body.dark-mode .dropdown-item:hover {
-    background-color: #0f3460;
-}
-
-body.dark-mode .list-group-item {
-    background-color: #16213e;
+.form-control {
+    background-color: var(--bg-tertiary);
     border-color: var(--border-color);
     color: var(--text-color);
 }
 
-/* Dark Mode Transitions */
+.form-control:focus {
+    background-color: var(--bg-tertiary);
+    color: var(--text-color);
+    border-color: var(--primary-color);
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+.form-select {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.table {
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.table thead {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.table tbody td {
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 59, 48, 0.2);
+}
+
+.sidebar {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+.modal-content {
+    background-color: var(--bg-secondary);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+code {
+    background-color: rgba(255, 59, 48, 0.2);
+    color: var(--primary-color);
+}
+
+.alert {
+    background-color: var(--bg-tertiary);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.dropdown-menu {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+.dropdown-item {
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--hover-color);
+}
+
+.list-group-item {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+/* Additional dark mode enhancements */
+.text-muted {
+    color: var(--text-secondary) !important;
+}
+
+.bg-light {
+    background-color: var(--bg-tertiary) !important;
+}
+
+.bg-white {
+    background-color: var(--bg-secondary) !important;
+}
+
+/* Smooth Transitions */
 body,
 .card,
 .form-control,
 .sidebar,
 .modal-content {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Dark Mode Toggle Animation */
-.theme-toggle-icon {
-    transition: transform 0.3s ease;
-}
-
-body.dark-mode .theme-toggle-icon {
-    transform: rotate(180deg);
 }

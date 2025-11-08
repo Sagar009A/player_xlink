@@ -135,7 +135,7 @@ $totalEarnings = $stmt->fetchColumn();
         }
     </style>
 </head>
-<body>
+<body class="dark-mode">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -152,11 +152,6 @@ $totalEarnings = $stmt->fetchColumn();
                     <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="/user/login.php">Login</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-light text-primary ms-2" href="/user/register.php">Sign Up</a></li>
-                    <li class="nav-item ms-2">
-                        <button class="theme-toggle" id="themeToggle">
-                            <i class="fas fa-moon theme-toggle-icon"></i>
-                        </button>
-                    </li>
                 </ul>
             </div>
         </div>

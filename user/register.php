@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/dark-mode.css">
 </head>
-<body>
+<body class="dark-mode">
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-7 col-md-8">

@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/dark-mode.css">
 </head>
-<body>
-    <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow" style="background: linear-gradient(135deg, #3498db, #6c63ff);">
+<body class="dark-mode">
+    <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow" style="background: linear-gradient(135deg, #ff3b30, #ff6347);">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="dashboard.php">
             <i class="fas fa-link"></i> LinkStreamX
         </a>
@@ -20,9 +20,6 @@
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
                 <span class="text-white me-3">Welcome, <?= htmlspecialchars($_SESSION['username'] ?? 'User') ?></span>
-                <button class="theme-toggle me-2" id="themeToggle">
-                    <i class="fas fa-moon theme-toggle-icon"></i>
-                </button>
                 <a class="nav-link px-3" href="logout.php">
                     <i class="fas fa-sign-out-alt"></i> Logout
                 </a>
