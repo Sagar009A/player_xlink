@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/dark-mode.css">
 </head>
-<body>
+<body class="dark-mode">
     <div class="container">
         <div class="row justify-content-center" style="min-height: 100vh; align-items: center;">
             <div class="col-xl-4 col-lg-5 col-md-6">

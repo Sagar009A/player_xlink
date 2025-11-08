@@ -56,8 +56,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Admin Login - LinkStreamX</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
 </head>
-<body class="bg-gradient-primary">
+<body class="dark-mode">
     <div class="container">
         <div class="row justify-content-center" style="min-height: 100vh; align-items: center;">
             <div class="col-xl-4 col-lg-5 col-md-6">
@@ -86,5 +87,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
     </div>
+    <script src="../assets/js/theme-switcher.js"></script>
 </body>
 </html>
