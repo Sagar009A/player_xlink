@@ -194,6 +194,16 @@ body.dark-mode .table tbody tr {
 body.dark-mode .table tbody td {
     border-color: var(--border-color);
     color: var(--text-color);
+    background-color: var(--bg-secondary);
+}
+
+/* Ensure text in table cells is always visible */
+body.dark-mode .table tbody td strong {
+    color: var(--text-color);
+}
+
+body.dark-mode .table tbody td div {
+    color: var(--text-color);
 }
 
 body.dark-mode .table-hover tbody tr:hover {
@@ -445,14 +455,53 @@ body.dark-mode .popover-body {
    CODE BLOCKS
    ============================================================ */
 body.dark-mode code {
-    background-color: rgba(255, 59, 48, 0.2);
-    color: #ff6347;
+    background-color: rgba(255, 59, 48, 0.3);
+    color: #ffffff;
+    font-weight: 500;
 }
 
 body.dark-mode pre {
     background-color: #0a0a0a;
     border-color: var(--border-color);
     color: var(--text-color);
+}
+
+/* Code in tables - ensure visibility */
+body.dark-mode .table code {
+    background-color: rgba(255, 59, 48, 0.3);
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Small text in tables */
+body.dark-mode .table small {
+    color: var(--text-secondary);
+}
+
+/* Text-muted in tables */
+body.dark-mode .table .text-muted,
+body.dark-mode .table small.text-muted {
+    color: #b0b0b0 !important;
+}
+
+/* Input groups in tables */
+body.dark-mode .table .input-group .form-control {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+body.dark-mode .table .input-group .btn {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+body.dark-mode .table .input-group .btn:hover {
+    background-color: var(--hover-color);
+    border-color: var(--primary-color);
 }
 
 /* ============================================================
@@ -752,6 +801,46 @@ body.dark-mode .bg-dark-secondary {
 
 body.dark-mode .bg-dark-tertiary {
     background-color: var(--bg-tertiary) !important;
+}
+
+/* ============================================================
+   CARD AND PANEL FIXES
+   ============================================================ */
+body.dark-mode .card .bg-light {
+    background-color: var(--bg-tertiary) !important;
+    color: var(--text-color) !important;
+}
+
+body.dark-mode .card .bg-white {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-color) !important;
+}
+
+body.dark-mode .card ul li {
+    color: var(--text-color);
+}
+
+body.dark-mode .card small {
+    color: var(--text-secondary);
+}
+
+/* ============================================================
+   FORM ELEMENT VISIBILITY
+   ============================================================ */
+body.dark-mode .form-label {
+    color: var(--text-color);
+}
+
+body.dark-mode .input-group .btn-outline-secondary {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+body.dark-mode .input-group .btn-outline-secondary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 /* ============================================================
