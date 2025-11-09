@@ -40,6 +40,23 @@ body {
     --shadow-hover: 0 5px 20px rgba(255, 59, 48, 0.5);
 }
 
+/* Ensure all text is visible */
+body, p, span, div, td, th, li, label {
+    color: var(--text-color);
+}
+
+/* Cards and panels - ensure dark background */
+.card-body {
+    background-color: var(--bg-secondary);
+    color: var(--text-color);
+}
+
+/* Ensure table cells have proper background */
+.table tbody td {
+    background-color: var(--bg-secondary);
+    color: var(--text-color);
+}
+
 /* Navbar */
 .navbar {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -354,11 +371,49 @@ body {
 
 /* Code Blocks */
 code {
-    background: rgba(255, 59, 48, 0.2);
+    background: rgba(255, 59, 48, 0.3);
     padding: 3px 8px;
     border-radius: 5px;
-    color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 500;
     font-family: 'Courier New', monospace;
+}
+
+/* Code in tables - ensure high contrast */
+.table code {
+    background-color: rgba(255, 59, 48, 0.3);
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Small text visibility */
+.table small {
+    color: var(--text-secondary);
+}
+
+/* Text-muted in tables */
+.table .text-muted {
+    color: #b0b0b0 !important;
+}
+
+/* Input groups in tables */
+.table .input-group .form-control {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.table .input-group .btn {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.table .input-group .btn:hover {
+    background-color: var(--hover-color);
+    border-color: var(--primary-color);
 }
 
 /* Smooth Scrolling */
@@ -661,4 +716,42 @@ body,
 .sidebar,
 .modal-content {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Additional visibility fixes for cards */
+.card .bg-light {
+    background-color: var(--bg-tertiary) !important;
+    color: var(--text-color) !important;
+}
+
+.card .bg-white {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-color) !important;
+}
+
+/* Ensure alert text is visible */
+.alert {
+    color: var(--text-color);
+}
+
+.alert .text-muted {
+    color: #b0b0b0 !important;
+}
+
+/* Form labels */
+.form-label {
+    color: var(--text-color);
+}
+
+/* Buttons in input groups */
+.input-group .btn-outline-secondary {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.input-group .btn-outline-secondary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
 }
