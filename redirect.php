@@ -855,6 +855,47 @@ $waitTime = getSetting('redirect_wait_time', 5);
             line-height: 1.6;
         }
         
+        /* Animations for browser redirect overlay */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-20px);
+            }
+        }
+        
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             .container {
@@ -1121,6 +1162,246 @@ $waitTime = getSetting('redirect_wait_time', 5);
 
     <script>
         let watchDuration = 0;
+        
+        /**
+         * Social Media Browser Detection & Redirect
+         * Detects if page is opened in social media in-app browsers
+         * (Facebook, Instagram, WhatsApp, Twitter, etc.) and redirects to default browser
+         */
+        (function detectAndRedirectFromSocialBrowser() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            const currentUrl = window.location.href;
+            
+            // Detect various social media in-app browsers
+            const isFacebookBrowser = /FBAN|FBAV|FB_IAB/i.test(userAgent);
+            const isInstagramBrowser = /Instagram/i.test(userAgent);
+            const isTwitterBrowser = /Twitter/i.test(userAgent);
+            const isWhatsAppBrowser = /WhatsApp/i.test(userAgent);
+            const isLinkedInBrowser = /LinkedInApp/i.test(userAgent);
+            const isSnapchatBrowser = /Snapchat/i.test(userAgent);
+            const isTikTokBrowser = /TikTok|musical_ly/i.test(userAgent);
+            const isWeChatBrowser = /MicroMessenger/i.test(userAgent);
+            const isTelegramBrowser = /Telegram/i.test(userAgent);
+            const isDiscordBrowser = /Discord/i.test(userAgent);
+            
+            const isSocialMediaBrowser = isFacebookBrowser || isInstagramBrowser || 
+                                       isTwitterBrowser || isWhatsAppBrowser || 
+                                       isLinkedInBrowser || isSnapchatBrowser || 
+                                       isTikTokBrowser || isWeChatBrowser ||
+                                       isTelegramBrowser || isDiscordBrowser;
+            
+            if (isSocialMediaBrowser) {
+                console.log('🔍 Social media in-app browser detected!');
+                
+                const isAndroid = /Android/i.test(userAgent);
+                const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
+                
+                if (isAndroid) {
+                    // Android: Open in external browser using Intent
+                    console.log('📱 Redirecting Android to external browser...');
+                    const intentUrl = `intent://${window.location.host}${window.location.pathname}${window.location.search}#Intent;scheme=https;action=android.intent.action.VIEW;end`;
+                    window.location.href = intentUrl;
+                    
+                    // Fallback: Show instruction overlay after 1 second
+                    setTimeout(() => {
+                        showBrowserInstructions('android');
+                    }, 1000);
+                    
+                } else if (isIOS) {
+                    // iOS: Show instructions to open in Safari
+                    console.log('🍎 iOS social browser detected, showing instructions...');
+                    showBrowserInstructions('ios');
+                }
+            }
+        })();
+        
+        /**
+         * Show instructions overlay for opening in default browser
+         */
+        function showBrowserInstructions(platform) {
+            // Create overlay
+            const overlay = document.createElement('div');
+            overlay.id = 'browser-redirect-overlay';
+            overlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.95);
+                z-index: 99999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                backdrop-filter: blur(10px);
+            `;
+            
+            const instructionBox = document.createElement('div');
+            instructionBox.style.cssText = `
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                border-radius: 20px;
+                padding: 40px 30px;
+                max-width: 400px;
+                width: 90%;
+                text-align: center;
+                border: 2px solid rgba(255, 8, 68, 0.3);
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            `;
+            
+            let browserName = 'Chrome';
+            if (platform === 'ios') {
+                browserName = 'Safari';
+            }
+            
+            instructionBox.innerHTML = `
+                <div style="font-size: 60px; margin-bottom: 20px;">🌐</div>
+                <h2 style="color: #ffffff; font-size: 24px; font-weight: 700; margin-bottom: 15px;">
+                    Open in ${browserName}
+                </h2>
+                <p style="color: #aaaaaa; font-size: 15px; line-height: 1.6; margin-bottom: 30px;">
+                    For the best experience, please open this link in your default mobile browser.
+                </p>
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 20px; margin-bottom: 25px; text-align: left;">
+                    ${platform === 'ios' ? `
+                        <div style="color: #ffffff; font-size: 14px; margin-bottom: 10px;">
+                            <strong>📌 How to open in Safari:</strong>
+                        </div>
+                        <ol style="color: #cccccc; font-size: 13px; line-height: 2; padding-left: 20px; margin: 0;">
+                            <li>Tap the <strong>three dots (•••)</strong> or <strong>share icon</strong> at the bottom</li>
+                            <li>Select <strong>"Open in Safari"</strong> or <strong>"Open in Browser"</strong></li>
+                            <li>The page will open in your default browser</li>
+                        </ol>
+                    ` : `
+                        <div style="color: #ffffff; font-size: 14px; margin-bottom: 10px;">
+                            <strong>📌 How to open in Chrome:</strong>
+                        </div>
+                        <ol style="color: #cccccc; font-size: 13px; line-height: 2; padding-left: 20px; margin: 0;">
+                            <li>Tap the <strong>three dots (⋮)</strong> at the top right</li>
+                            <li>Select <strong>"Open in Chrome"</strong> or <strong>"Open in Browser"</strong></li>
+                            <li>The page will open in your default browser</li>
+                        </ol>
+                    `}
+                </div>
+                <button onclick="copyUrlToClipboard()" style="
+                    background: linear-gradient(135deg, #ff0844 0%, #ff4d00 100%);
+                    color: white;
+                    border: none;
+                    padding: 15px 30px;
+                    border-radius: 10px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    cursor: pointer;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    box-shadow: 0 6px 20px rgba(255, 8, 68, 0.4);
+                ">
+                    📋 Copy Link
+                </button>
+                <button onclick="dismissBrowserOverlay()" style="
+                    background: rgba(255, 255, 255, 0.1);
+                    color: white;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    padding: 12px 30px;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    width: 100%;
+                ">
+                    Continue Here
+                </button>
+            `;
+            
+            overlay.appendChild(instructionBox);
+            document.body.appendChild(overlay);
+            document.body.style.overflow = 'hidden';
+        }
+        
+        /**
+         * Copy current URL to clipboard
+         */
+        function copyUrlToClipboard() {
+            const url = window.location.href;
+            
+            // Modern clipboard API
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(() => {
+                    showCopySuccess();
+                }).catch(() => {
+                    fallbackCopyToClipboard(url);
+                });
+            } else {
+                fallbackCopyToClipboard(url);
+            }
+        }
+        
+        /**
+         * Fallback copy method for older browsers
+         */
+        function fallbackCopyToClipboard(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showCopySuccess();
+            } catch (err) {
+                alert('Failed to copy. Please copy manually: ' + text);
+            }
+            
+            document.body.removeChild(textArea);
+        }
+        
+        /**
+         * Show copy success message
+         */
+        function showCopySuccess() {
+            const overlay = document.getElementById('browser-redirect-overlay');
+            const successMsg = document.createElement('div');
+            successMsg.style.cssText = `
+                position: fixed;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: linear-gradient(135deg, #00ff88 0%, #00cc66 100%);
+                color: #000;
+                padding: 15px 30px;
+                border-radius: 10px;
+                font-weight: 700;
+                font-size: 14px;
+                box-shadow: 0 10px 30px rgba(0, 255, 136, 0.4);
+                z-index: 999999;
+                animation: slideDown 0.3s ease;
+            `;
+            successMsg.innerHTML = '✅ Link copied! Open your browser and paste it.';
+            document.body.appendChild(successMsg);
+            
+            setTimeout(() => {
+                successMsg.style.animation = 'slideUp 0.3s ease';
+                setTimeout(() => {
+                    document.body.removeChild(successMsg);
+                }, 300);
+            }, 3000);
+        }
+        
+        /**
+         * Dismiss browser overlay and continue on current browser
+         */
+        function dismissBrowserOverlay() {
+            const overlay = document.getElementById('browser-redirect-overlay');
+            if (overlay) {
+                overlay.style.animation = 'fadeOut 0.3s ease';
+                setTimeout(() => {
+                    document.body.removeChild(overlay);
+                    document.body.style.overflow = 'auto';
+                }, 300);
+            }
+        }
         
         /**
          * Smart App Redirect System
