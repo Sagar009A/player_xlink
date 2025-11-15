@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Browser Detection Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #ff0844 0%, #ff4d00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .info-box {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .info-box h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #ff0844;
+        }
+        
+        .info-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .label {
+            color: #888;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        
+        .value {
+            font-size: 14px;
+            word-break: break-all;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        
+        .status.detected {
+            background: #ff0844;
+            color: white;
+        }
+        
+        .status.normal {
+            background: #00ff88;
+            color: #000;
+        }
+        
+        .button {
+            background: linear-gradient(135deg, #ff0844 0%, #ff4d00 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: 0 6px 20px rgba(255, 8, 68, 0.4);
+        }
+        
+        .button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .detected-browsers {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .browser-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            margin: 5px 0;
+            background: #0a0a0a;
+            border-radius: 8px;
+        }
+        
+        .browser-icon {
+            font-size: 24px;
+        }
+        
+        .browser-name {
+            flex: 1;
+            font-size: 14px;
+        }
+        
+        .check {
+            color: #00ff88;
+            font-size: 18px;
+        }
+        
+        .cross {
+            color: #ff0844;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Social Media Browser Detection Test</h1>
+        
+        <div class="info-box">
+            <h2>Current Browser Detection</h2>
+            <div class="info-item">
+                <div class="label">Browser Type:</div>
+                <div class="value" id="browserType">Checking...</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Platform:</div>
+                <div class="value" id="platform">Checking...</div>
+            </div>
+            <div class="info-item">
+                <div class="label">User Agent:</div>
+                <div class="value" id="userAgent">Checking...</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Social Media Browser:</div>
+                <div class="value" id="socialStatus">Checking...</div>
+            </div>
+        </div>
+        
+        <div class="detected-browsers">
+            <h2 style="margin-bottom: 15px; color: #ff0844;">Supported Social Media Browsers</h2>
+            <div class="browser-item">
+                <div class="browser-icon">📘</div>
+                <div class="browser-name">Facebook (FBAN/FBAV/FB_IAB)</div>
+                <div id="facebook-check">❌</div>
+            </div>
+            <div class="browser-item">
+                <div class="browser-icon">📷</div>
+                <div class="browser-name">Instagram</div>
+                <div id="instagram-check">❌</div>
+            </div>
+            <div class="browser-item">
+                <div class="browser-icon">💬</div>
+                <div class="browser-name">WhatsApp</div>
+                <div id="whatsapp-check">❌</div>
+            </div>
+            <div class="browser-item">
+                <div class="browser-icon">🐦</div>
+                <div class="browser-name">Twitter/X</div>
+                <div id="twitter-check">❌</div>
+            </div>
+            <div class="browser-item">
+                <div class="browser-icon">💼</div>
+                <div class="browser-name">LinkedIn</div>
+                <div id="linkedin-check">❌</div>
+            </div>
+            <div class="browser-item">
+                <div class="browser-icon">👻</div>
+                <div class="browser-name">Snapchat</div>
+                <div id="snapchat-check">❌</div>
+            </div>
+            <div class="browser-item">
+                <div class="browser-icon">🎵</div>
+                <div class="browser-name">TikTok</div>
+                <div id="tiktok-check">❌</div>
+            </div>
+            <div class="browser-item">
+                <div class="browser-icon">💚</div>
+                <div class="browser-name">WeChat</div>
+                <div id="wechat-check">❌</div>
+            </div>
+            <div class="browser-item">
+                <div class="browser-icon">✈️</div>
+                <div class="browser-name">Telegram</div>
+                <div id="telegram-check">❌</div>
+            </div>
+            <div class="browser-item">
+                <div class="browser-icon">💬</div>
+                <div class="browser-name">Discord</div>
+                <div id="discord-check">❌</div>
+            </div>
+        </div>
+        
+        <button class="button" onclick="testRedirect()">
+            🔄 Test Redirect Function
+        </button>
+    </div>
+
+    <script>
+        // Get user agent and detect
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        
+        // Detection functions
+        const isFacebookBrowser = /FBAN|FBAV|FB_IAB/i.test(userAgent);
+        const isInstagramBrowser = /Instagram/i.test(userAgent);
+        const isTwitterBrowser = /Twitter/i.test(userAgent);
+        const isWhatsAppBrowser = /WhatsApp/i.test(userAgent);
+        const isLinkedInBrowser = /LinkedInApp/i.test(userAgent);
+        const isSnapchatBrowser = /Snapchat/i.test(userAgent);
+        const isTikTokBrowser = /TikTok|musical_ly/i.test(userAgent);
+        const isWeChatBrowser = /MicroMessenger/i.test(userAgent);
+        const isTelegramBrowser = /Telegram/i.test(userAgent);
+        const isDiscordBrowser = /Discord/i.test(userAgent);
+        
+        const isSocialMediaBrowser = isFacebookBrowser || isInstagramBrowser || 
+                                   isTwitterBrowser || isWhatsAppBrowser || 
+                                   isLinkedInBrowser || isSnapchatBrowser || 
+                                   isTikTokBrowser || isWeChatBrowser ||
+                                   isTelegramBrowser || isDiscordBrowser;
+        
+        // Platform detection
+        const isAndroid = /Android/i.test(userAgent);
+        const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
+        const isMobile = isAndroid || isIOS;
+        
+        // Browser detection
+        let browserName = 'Unknown';
+        if (isFacebookBrowser) browserName = 'Facebook In-App Browser';
+        else if (isInstagramBrowser) browserName = 'Instagram In-App Browser';
+        else if (isWhatsAppBrowser) browserName = 'WhatsApp In-App Browser';
+        else if (isTwitterBrowser) browserName = 'Twitter In-App Browser';
+        else if (isLinkedInBrowser) browserName = 'LinkedIn In-App Browser';
+        else if (isSnapchatBrowser) browserName = 'Snapchat In-App Browser';
+        else if (isTikTokBrowser) browserName = 'TikTok In-App Browser';
+        else if (isWeChatBrowser) browserName = 'WeChat In-App Browser';
+        else if (isTelegramBrowser) browserName = 'Telegram In-App Browser';
+        else if (isDiscordBrowser) browserName = 'Discord In-App Browser';
+        else if (/Chrome/i.test(userAgent)) browserName = 'Chrome';
+        else if (/Safari/i.test(userAgent)) browserName = 'Safari';
+        else if (/Firefox/i.test(userAgent)) browserName = 'Firefox';
+        else if (/Edge/i.test(userAgent)) browserName = 'Edge';
+        
+        // Platform name
+        let platformName = 'Desktop';
+        if (isAndroid) platformName = 'Android';
+        else if (isIOS) platformName = 'iOS';
+        else if (isMobile) platformName = 'Mobile (Unknown)';
+        
+        // Update UI
+        document.getElementById('browserType').innerHTML = browserName;
+        document.getElementById('platform').innerHTML = platformName;
+        document.getElementById('userAgent').innerHTML = userAgent;
+        
+        if (isSocialMediaBrowser) {
+            document.getElementById('socialStatus').innerHTML = 
+                '<span class="status detected">⚠️ Social Media Browser Detected</span>';
+        } else {
+            document.getElementById('socialStatus').innerHTML = 
+                '<span class="status normal">✅ Standard Browser</span>';
+        }
+        
+        // Update check marks
+        if (isFacebookBrowser) document.getElementById('facebook-check').innerHTML = '✅';
+        if (isInstagramBrowser) document.getElementById('instagram-check').innerHTML = '✅';
+        if (isWhatsAppBrowser) document.getElementById('whatsapp-check').innerHTML = '✅';
+        if (isTwitterBrowser) document.getElementById('twitter-check').innerHTML = '✅';
+        if (isLinkedInBrowser) document.getElementById('linkedin-check').innerHTML = '✅';
+        if (isSnapchatBrowser) document.getElementById('snapchat-check').innerHTML = '✅';
+        if (isTikTokBrowser) document.getElementById('tiktok-check').innerHTML = '✅';
+        if (isWeChatBrowser) document.getElementById('wechat-check').innerHTML = '✅';
+        if (isTelegramBrowser) document.getElementById('telegram-check').innerHTML = '✅';
+        if (isDiscordBrowser) document.getElementById('discord-check').innerHTML = '✅';
+        
+        // Test redirect function
+        function testRedirect() {
+            if (isSocialMediaBrowser) {
+                alert('✅ Social Media Browser Detected!\n\n' +
+                      'Browser: ' + browserName + '\n' +
+                      'Platform: ' + platformName + '\n\n' +
+                      'In production, this would:\n' +
+                      '• Android: Auto-redirect to Chrome\n' +
+                      '• iOS: Show Safari instructions');
+            } else {
+                alert('ℹ️ Standard Browser Detected\n\n' +
+                      'Browser: ' + browserName + '\n' +
+                      'Platform: ' + platformName + '\n\n' +
+                      'No redirect needed - you\'re already in a standard browser!');
+            }
+        }
+        
+        // Log to console
+        console.log('=== Browser Detection Test ===');
+        console.log('Browser:', browserName);
+        console.log('Platform:', platformName);
+        console.log('Is Social Media Browser:', isSocialMediaBrowser);
+        console.log('User Agent:', userAgent);
+    </script>
+</body>
+</html>
