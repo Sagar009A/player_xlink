@@ -3,7 +3,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'u988479389_te');
 define('DB_USER', 'u988479389_te');
-define('DB_PASS', 'Sagar31#@');
+define('DB_PASS', '');
 define('DB_CHARSET', 'utf8mb4');
 
 // Function to get database connection
